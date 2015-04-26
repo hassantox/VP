@@ -23,7 +23,7 @@ namespace VPPianoProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-             button1.BackColor = Color.Blue;
+            
 
         }
     }
