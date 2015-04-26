@@ -1,0 +1,9 @@
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\VPPianoProject.exe
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\VPPianoProject.pdb
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.Main.resources
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.Game.resources
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.Properties.Resources.resources
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.csproj.GenerateResource.Cache
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.exe
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.pdb
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.csprojResolveAssemblyReference.cache
