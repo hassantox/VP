@@ -104,6 +104,9 @@
   <ItemGroup>
     <None Include="Resources\bfa_volume-up_flat-rounded-square-white-on-black.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-keys.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

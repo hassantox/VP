@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Media;
 namespace VPPianoProject
 {
     public partial class Main : Form
@@ -15,12 +15,15 @@ namespace VPPianoProject
         {
             InitializeComponent();
         }
+
         Game gameObj = new Game();
+        SoundPlayer key = new SoundPlayer(@"C:\Windows\Media\Ding.wav");
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             gameObj.Show();
+            key.Play();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

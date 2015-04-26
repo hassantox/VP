@@ -73,6 +73,16 @@ namespace VPPianoProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8_keys {
+            get {
+                object obj = ResourceManager.GetObject("8-keys", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bfa_volume_up_flat_rounded_square_white_on_black {
             get {
                 object obj = ResourceManager.GetObject("bfa_volume-up_flat-rounded-square-white-on-black", resourceCulture);
