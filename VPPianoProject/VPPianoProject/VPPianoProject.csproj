@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="mainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
@@ -60,8 +60,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
@@ -106,6 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8-keys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit_exit-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit_exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1386985357.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28FC9B29B84846FAB3127A4E46A95B48_12073-d0d66fe5085f4bda772bafe49a07f500.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -63,9 +63,29 @@ namespace VPPianoProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1386985357 {
+            get {
+                object obj = ResourceManager.GetObject("1386985357", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2000px_PianoKeyboard {
             get {
                 object obj = ResourceManager.GetObject("2000px-PianoKeyboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500 {
+            get {
+                object obj = ResourceManager.GetObject("28FC9B29B84846FAB3127A4E46A95B48_12073-d0d66fe5085f4bda772bafe49a07f500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +126,26 @@ namespace VPPianoProject.Properties {
         internal static System.Drawing.Bitmap Chapter_6_007_piano_puzzle {
             get {
                 object obj = ResourceManager.GetObject("Chapter-6-007-piano-puzzle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quit_exit {
+            get {
+                object obj = ResourceManager.GetObject("quit_exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quit_exit_512 {
+            get {
+                object obj = ResourceManager.GetObject("quit_exit-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

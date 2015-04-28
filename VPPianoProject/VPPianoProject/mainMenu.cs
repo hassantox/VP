@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Media;
+
 namespace VPPianoProject
 {
-    public partial class Main : Form
+    public partial class mainMenu : Form
     {
-        public Main()
+        public mainMenu()
         {
             InitializeComponent();
         }
@@ -21,8 +22,9 @@ namespace VPPianoProject
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             gameObj.Show();
+            
             key.Play();
         }
 
@@ -31,24 +33,20 @@ namespace VPPianoProject
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Main_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-
+            gameObj.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void imageExit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
+
     }
 }
