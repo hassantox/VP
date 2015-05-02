@@ -60,6 +60,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Notes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Notes.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="mainMenu.resx">
       <DependentUpon>mainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +81,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Notes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Notes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,6 +127,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\28FC9B29B84846FAB3127A4E46A95B48_12073-d0d66fe5085f4bda772bafe49a07f500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a#35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a#47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b48Last.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C25Start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d#28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d#40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f#31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f#43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g#33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g#45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g44.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

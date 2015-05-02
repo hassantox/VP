@@ -22,7 +22,7 @@ namespace VPPianoProject
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+           
             gameObj.Show();
             
             key.Play();

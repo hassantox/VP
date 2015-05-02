@@ -29,6 +29,19 @@
         private void InitializeComponent()
         {
             this.pianoContainer = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.keyMA2 = new System.Windows.Forms.Button();
+            this.keyMD2 = new System.Windows.Forms.Button();
+            this.keyMG2 = new System.Windows.Forms.Button();
+            this.keyMF2 = new System.Windows.Forms.Button();
+            this.keyMC2 = new System.Windows.Forms.Button();
+            this.keyD2 = new System.Windows.Forms.Button();
+            this.keyB2 = new System.Windows.Forms.Button();
+            this.keyF2 = new System.Windows.Forms.Button();
+            this.keyG2 = new System.Windows.Forms.Button();
+            this.keyA2 = new System.Windows.Forms.Button();
+            this.keyE2 = new System.Windows.Forms.Button();
+            this.keyC2 = new System.Windows.Forms.Button();
             this.keyMG1 = new System.Windows.Forms.Button();
             this.keyMA1 = new System.Windows.Forms.Button();
             this.keyMF1 = new System.Windows.Forms.Button();
@@ -41,7 +54,6 @@
             this.keyC1M = new System.Windows.Forms.Button();
             this.keyD1 = new System.Windows.Forms.Button();
             this.keyC1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).BeginInit();
             this.pianoContainer.Panel1.SuspendLayout();
             this.pianoContainer.Panel2.SuspendLayout();
@@ -64,6 +76,18 @@
             // pianoContainer.Panel2
             // 
             this.pianoContainer.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.pianoContainer.Panel2.Controls.Add(this.keyMA2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyMD2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyMG2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyMF2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyMC2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyD2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyB2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyF2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyG2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyA2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyE2);
+            this.pianoContainer.Panel2.Controls.Add(this.keyC2);
             this.pianoContainer.Panel2.Controls.Add(this.keyMG1);
             this.pianoContainer.Panel2.Controls.Add(this.keyMA1);
             this.pianoContainer.Panel2.Controls.Add(this.keyMF1);
@@ -79,6 +103,149 @@
             this.pianoContainer.Size = new System.Drawing.Size(853, 377);
             this.pianoContainer.SplitterDistance = 162;
             this.pianoContainer.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::VPPianoProject.Properties.Resources._28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(596, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // keyMA2
+            // 
+            this.keyMA2.BackColor = System.Drawing.Color.Black;
+            this.keyMA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMA2.Location = new System.Drawing.Point(527, 3);
+            this.keyMA2.Name = "keyMA2";
+            this.keyMA2.Size = new System.Drawing.Size(37, 144);
+            this.keyMA2.TabIndex = 5;
+            this.keyMA2.UseVisualStyleBackColor = false;
+            this.keyMA2.Click += new System.EventHandler(this.keyMA2_Click);
+            // 
+            // keyMD2
+            // 
+            this.keyMD2.BackColor = System.Drawing.Color.Black;
+            this.keyMD2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMD2.Location = new System.Drawing.Point(357, 3);
+            this.keyMD2.Name = "keyMD2";
+            this.keyMD2.Size = new System.Drawing.Size(37, 144);
+            this.keyMD2.TabIndex = 2;
+            this.keyMD2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.keyMD2.UseVisualStyleBackColor = false;
+            this.keyMD2.Click += new System.EventHandler(this.keyMD2_Click);
+            // 
+            // keyMG2
+            // 
+            this.keyMG2.BackColor = System.Drawing.Color.Black;
+            this.keyMG2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMG2.Location = new System.Drawing.Point(484, 3);
+            this.keyMG2.Name = "keyMG2";
+            this.keyMG2.Size = new System.Drawing.Size(37, 144);
+            this.keyMG2.TabIndex = 3;
+            this.keyMG2.UseVisualStyleBackColor = false;
+            this.keyMG2.Click += new System.EventHandler(this.keyMG2_Click);
+            // 
+            // keyMF2
+            // 
+            this.keyMF2.BackColor = System.Drawing.Color.Black;
+            this.keyMF2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMF2.Location = new System.Drawing.Point(441, 3);
+            this.keyMF2.Name = "keyMF2";
+            this.keyMF2.Size = new System.Drawing.Size(37, 144);
+            this.keyMF2.TabIndex = 4;
+            this.keyMF2.UseVisualStyleBackColor = false;
+            this.keyMF2.Click += new System.EventHandler(this.keyMF2_Click);
+            // 
+            // keyMC2
+            // 
+            this.keyMC2.BackColor = System.Drawing.Color.Black;
+            this.keyMC2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMC2.Location = new System.Drawing.Point(314, 3);
+            this.keyMC2.Name = "keyMC2";
+            this.keyMC2.Size = new System.Drawing.Size(37, 144);
+            this.keyMC2.TabIndex = 1;
+            this.keyMC2.UseVisualStyleBackColor = false;
+            this.keyMC2.Click += new System.EventHandler(this.keyMC2_Click);
+            // 
+            // keyD2
+            // 
+            this.keyD2.BackColor = System.Drawing.Color.White;
+            this.keyD2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyD2.Location = new System.Drawing.Point(333, 3);
+            this.keyD2.Name = "keyD2";
+            this.keyD2.Size = new System.Drawing.Size(45, 207);
+            this.keyD2.TabIndex = 30;
+            this.keyD2.UseVisualStyleBackColor = false;
+            this.keyD2.Click += new System.EventHandler(this.keyD2_Click);
+            // 
+            // keyB2
+            // 
+            this.keyB2.BackColor = System.Drawing.Color.White;
+            this.keyB2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyB2.Location = new System.Drawing.Point(541, 3);
+            this.keyB2.Name = "keyB2";
+            this.keyB2.Size = new System.Drawing.Size(45, 207);
+            this.keyB2.TabIndex = 29;
+            this.keyB2.UseVisualStyleBackColor = false;
+            this.keyB2.Click += new System.EventHandler(this.keyB2_Click);
+            // 
+            // keyF2
+            // 
+            this.keyF2.BackColor = System.Drawing.Color.White;
+            this.keyF2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyF2.Location = new System.Drawing.Point(416, 3);
+            this.keyF2.Name = "keyF2";
+            this.keyF2.Size = new System.Drawing.Size(45, 207);
+            this.keyF2.TabIndex = 28;
+            this.keyF2.UseVisualStyleBackColor = false;
+            this.keyF2.Click += new System.EventHandler(this.keyF2_Click);
+            // 
+            // keyG2
+            // 
+            this.keyG2.BackColor = System.Drawing.Color.White;
+            this.keyG2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyG2.Location = new System.Drawing.Point(457, 3);
+            this.keyG2.Name = "keyG2";
+            this.keyG2.Size = new System.Drawing.Size(45, 207);
+            this.keyG2.TabIndex = 27;
+            this.keyG2.UseVisualStyleBackColor = false;
+            this.keyG2.Click += new System.EventHandler(this.keyG2_Click);
+            // 
+            // keyA2
+            // 
+            this.keyA2.BackColor = System.Drawing.Color.White;
+            this.keyA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyA2.Location = new System.Drawing.Point(499, 3);
+            this.keyA2.Name = "keyA2";
+            this.keyA2.Size = new System.Drawing.Size(45, 207);
+            this.keyA2.TabIndex = 26;
+            this.keyA2.UseVisualStyleBackColor = false;
+            this.keyA2.Click += new System.EventHandler(this.keyA2_Click);
+            // 
+            // keyE2
+            // 
+            this.keyE2.BackColor = System.Drawing.Color.White;
+            this.keyE2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyE2.Location = new System.Drawing.Point(375, 3);
+            this.keyE2.Name = "keyE2";
+            this.keyE2.Size = new System.Drawing.Size(45, 207);
+            this.keyE2.TabIndex = 25;
+            this.keyE2.UseVisualStyleBackColor = false;
+            this.keyE2.Click += new System.EventHandler(this.keyE2_Click);
+            // 
+            // keyC2
+            // 
+            this.keyC2.BackColor = System.Drawing.Color.White;
+            this.keyC2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC2.Location = new System.Drawing.Point(291, 3);
+            this.keyC2.Name = "keyC2";
+            this.keyC2.Size = new System.Drawing.Size(45, 207);
+            this.keyC2.TabIndex = 24;
+            this.keyC2.UseVisualStyleBackColor = false;
+            this.keyC2.Click += new System.EventHandler(this.keyC2_Click);
             // 
             // keyMG1
             // 
@@ -213,24 +380,13 @@
             this.keyC1.UseVisualStyleBackColor = false;
             this.keyC1.Click += new System.EventHandler(this.keyC1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::VPPianoProject.Properties.Resources._28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(847, 166);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(852, 379);
+            this.ClientSize = new System.Drawing.Size(591, 379);
             this.Controls.Add(this.pianoContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Game";
@@ -261,5 +417,17 @@
         private System.Windows.Forms.Button keyD1;
         private System.Windows.Forms.Button keyC1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button keyMA2;
+        private System.Windows.Forms.Button keyMD2;
+        private System.Windows.Forms.Button keyMG2;
+        private System.Windows.Forms.Button keyMF2;
+        private System.Windows.Forms.Button keyMC2;
+        private System.Windows.Forms.Button keyD2;
+        private System.Windows.Forms.Button keyB2;
+        private System.Windows.Forms.Button keyF2;
+        private System.Windows.Forms.Button keyG2;
+        private System.Windows.Forms.Button keyA2;
+        private System.Windows.Forms.Button keyE2;
+        private System.Windows.Forms.Button keyC2;
     }
 }

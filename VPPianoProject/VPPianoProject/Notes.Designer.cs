@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VPPianoProject.Properties {
+namespace VPPianoProject {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace VPPianoProject.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class Notes {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Notes() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace VPPianoProject.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VPPianoProject.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VPPianoProject.Notes", typeof(Notes).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,46 +57,6 @@ namespace VPPianoProject.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1386985357 {
-            get {
-                object obj = ResourceManager.GetObject("1386985357", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2000px_PianoKeyboard {
-            get {
-                object obj = ResourceManager.GetObject("2000px-PianoKeyboard", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500 {
-            get {
-                object obj = ResourceManager.GetObject("28FC9B29B84846FAB3127A4E46A95B48_12073-d0d66fe5085f4bda772bafe49a07f500", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _8_keys {
-            get {
-                object obj = ResourceManager.GetObject("8-keys", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -155,26 +115,6 @@ namespace VPPianoProject.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bfa_volume_up_flat_rounded_square_white_on_black {
-            get {
-                object obj = ResourceManager.GetObject("bfa_volume-up_flat-rounded-square-white-on-black", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bfa_volume_up_flat_rounded_square_white_on_black_512x512 {
-            get {
-                object obj = ResourceManager.GetObject("bfa_volume-up_flat-rounded-square-white-on-black_512x512", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream c_26 {
@@ -207,16 +147,6 @@ namespace VPPianoProject.Properties {
         internal static System.IO.UnmanagedMemoryStream c37 {
             get {
                 return ResourceManager.GetStream("c37", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Chapter_6_007_piano_puzzle {
-            get {
-                object obj = ResourceManager.GetObject("Chapter-6-007-piano-puzzle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -343,46 +273,6 @@ namespace VPPianoProject.Properties {
         internal static System.IO.UnmanagedMemoryStream g44 {
             get {
                 return ResourceManager.GetStream("g44", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap quit_exit {
-            get {
-                object obj = ResourceManager.GetObject("quit_exit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap quit_exit_512 {
-            get {
-                object obj = ResourceManager.GetObject("quit_exit-512", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sound {
-            get {
-                object obj = ResourceManager.GetObject("sound", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap upload_rsivk1lb2glij2v1k53tpbpsb7543391_jpg_final {
-            get {
-                object obj = ResourceManager.GetObject("upload-rsivk1lb2glij2v1k53tpbpsb7543391.jpg-final", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
