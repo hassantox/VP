@@ -190,4 +190,115 @@
   <data name="g_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\g#45.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="a10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a10.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="a22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a22.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="a58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a58.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="a_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a#11.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="a_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a#23.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="a_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\a#59.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="b12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\b12.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="b24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\b24.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="b60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\b60.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c13.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c49.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c61.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c#14.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c#2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="c_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c#50.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="d15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\d15.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="d3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\d3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="d51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\d51.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="d_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\d#16.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="d_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\d#4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="d_52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\d#52.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="e17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\e17.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="e5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\e5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="e53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\e53.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\f18.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\f54.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\f6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\f#19.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\f#55.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\f#7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="g20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\g20.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="g56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\g56.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="g8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\g8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="g_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\g#21.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="g_57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\g#57.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="g_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\g#9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

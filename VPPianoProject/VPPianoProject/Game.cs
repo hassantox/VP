@@ -19,79 +19,83 @@ namespace VPPianoProject
 
         //SoundPlayer keySound = new SoundPlayer();   
 
+//       ++++++++++++++++++++++++++++++++++++  Sound for each Key on Piano ++++++++++++++++++++++++++++++++++++++
+
         private void keyC1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.C25Start);           
+            SoundPlayer keySound = new SoundPlayer(Notes.c1);           
             keySound.Play();
         }
 
         private void keyC1M_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.c_26);
+            SoundPlayer keySound = new SoundPlayer(Notes.c_2);
             keySound.Play();
         }
 
         private void keyD1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.D27);
+            SoundPlayer keySound = new SoundPlayer(Notes.d3);
             keySound.Play();
         }
 
         private void keyMD1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.d_28);
+            SoundPlayer keySound = new SoundPlayer(Notes.d_4);
             keySound.Play();
         }
 
         private void keyE1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.E29);
+            SoundPlayer keySound = new SoundPlayer(Notes.e5);
             keySound.Play();
         }
 
         private void keyF1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.F30);
+            SoundPlayer keySound = new SoundPlayer(Notes.f6);
             keySound.Play();
         }
 
         private void keyMF1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.f_31);
+            SoundPlayer keySound = new SoundPlayer(Notes.f_7);
             keySound.Play();
         }
 
         private void keyG1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.G32);
+            SoundPlayer keySound = new SoundPlayer(Notes.g8);
             keySound.Play();
         }
 
         private void keyMG1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.g_33);
+            SoundPlayer keySound = new SoundPlayer(Notes.g_9);
             keySound.Play();
         }
 
         private void keyA1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.A34);
+            SoundPlayer keySound = new SoundPlayer(Notes.a10);
             keySound.Play();
         }
 
         private void keyMA1_Click(object sender, EventArgs e)
         {
-            SoundPlayer keySound = new SoundPlayer(Notes.a_35);
+            SoundPlayer keySound = new SoundPlayer(Notes.a_11);
             keySound.Play();
         }
 
         private void keyB1_Click(object sender, EventArgs e)
         {
 
-            SoundPlayer keySound = new SoundPlayer(Notes.b36);
+            SoundPlayer keySound = new SoundPlayer(Notes.b12);
             keySound.Play();
         }
 
+        //              SECOND OCTAVE
+        //CHANGE
         private void keyC2_Click(object sender, EventArgs e)
         {
             SoundPlayer keySound = new SoundPlayer(Notes.c37);
@@ -164,6 +168,246 @@ namespace VPPianoProject
             keySound.Play();
         }
 
+        //              THIRD OCTAVE
+
+        private void keyC3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMC3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyD3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMD3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyE3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyF3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMF3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyG3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMG3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyA3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMA3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyB3_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        //          FOURTH OCTAVE
+
+        private void keyC4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMC4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyD4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMD4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyE4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyF4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMF4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyG4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMG4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyA4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMA4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyB4_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        //          FIFTH OCTAVE
+
+        private void keyC5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMC5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyD5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMD5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyE5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyF5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMF5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyG5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMG5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyA5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyMA5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyB5_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+        private void keyC6Last_Click(object sender, EventArgs e)
+        {
+            SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
+            keySound.Play();
+        }
+
+//            +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//            -------------------------- KEYBOARD CONROLS ---------------------------------------
+
+        private void Game_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.D1)
+            {
+                keyC1.PerformClick();
+            }
+        }
+        
 
         private void Game_Load(object sender, EventArgs e)
         {
@@ -174,6 +418,8 @@ namespace VPPianoProject
         {
             Application.Exit();
         }
+
+       
 
       
        

@@ -209,6 +209,117 @@
   <ItemGroup>
     <None Include="Resources\play.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a#11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a#23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a#59.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a58.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b60.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#50.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c61.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d#4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d#16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d#52.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d51.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e53.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f#7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f#19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f#55.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f54.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g#9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g#21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g#57.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g56.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
