@@ -392,6 +392,8 @@
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Game_FormClosing);
+            this.Load += new System.EventHandler(this.Game_Load);
             this.pianoContainer.Panel1.ResumeLayout(false);
             this.pianoContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).EndInit();

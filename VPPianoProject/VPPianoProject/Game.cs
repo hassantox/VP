@@ -22,7 +22,7 @@ namespace VPPianoProject
         private void keyC1_Click(object sender, EventArgs e)
         {
             SoundPlayer keySound = new SoundPlayer(Notes.C25Start);           
-            keySound.PlaySync();
+            keySound.Play();
         }
 
         private void keyC1M_Click(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace VPPianoProject
         {
 
             SoundPlayer keySound = new SoundPlayer(Notes.b36);
-            keySound.PlaySync();
+            keySound.Play();
         }
 
         private void keyC2_Click(object sender, EventArgs e)
@@ -164,6 +164,18 @@ namespace VPPianoProject
             keySound.Play();
         }
 
+
+        private void Game_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Game_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+      
        
 
 

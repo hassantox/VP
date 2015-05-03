@@ -22,10 +22,7 @@ namespace VPPianoProject
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
-            gameObj.Show();
             
-            key.Play();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -35,12 +32,14 @@ namespace VPPianoProject
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+           
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labelPlay_Click(object sender, EventArgs e)
         {
             gameObj.Show();
+            key.Play();
+            this.Hide();       
         }
 
         private void imageExit_Click(object sender, EventArgs e)
