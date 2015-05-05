@@ -83,6 +83,16 @@ namespace VPPianoProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _28FC9B29B848 {
+            get {
+                object obj = ResourceManager.GetObject("28FC9B29B848", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500 {
             get {
                 object obj = ResourceManager.GetObject("28FC9B29B84846FAB3127A4E46A95B48_12073-d0d66fe5085f4bda772bafe49a07f500", resourceCulture);

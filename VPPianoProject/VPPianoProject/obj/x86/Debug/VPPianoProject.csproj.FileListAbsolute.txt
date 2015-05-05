@@ -6,5 +6,6 @@ C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.exe
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.pdb
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.mainMenu.resources
-C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.csprojResolveAssemblyReference.cache
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.Notes.resources
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.csproj.ResolveComReference.cache
