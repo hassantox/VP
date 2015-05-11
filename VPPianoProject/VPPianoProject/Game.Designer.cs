@@ -30,7 +30,69 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.pianoContainer = new System.Windows.Forms.SplitContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.keyAssist = new System.Windows.Forms.CheckBox();
+            this.pianoImage = new System.Windows.Forms.PictureBox();
+            this.assistMG5 = new System.Windows.Forms.Label();
+            this.assistMA5 = new System.Windows.Forms.Label();
+            this.assistMF5 = new System.Windows.Forms.Label();
+            this.assistMD5 = new System.Windows.Forms.Label();
+            this.assistMC5 = new System.Windows.Forms.Label();
+            this.assistMA4 = new System.Windows.Forms.Label();
+            this.assistMG4 = new System.Windows.Forms.Label();
+            this.assistMF4 = new System.Windows.Forms.Label();
+            this.assistMD4 = new System.Windows.Forms.Label();
+            this.assistMC4 = new System.Windows.Forms.Label();
+            this.assistMG3 = new System.Windows.Forms.Label();
+            this.assistMD3 = new System.Windows.Forms.Label();
+            this.assistMF3 = new System.Windows.Forms.Label();
+            this.assistMA3 = new System.Windows.Forms.Label();
+            this.assistMC3 = new System.Windows.Forms.Label();
+            this.assistMA2 = new System.Windows.Forms.Label();
+            this.assistMG2 = new System.Windows.Forms.Label();
+            this.assistMF2 = new System.Windows.Forms.Label();
+            this.assistMD2 = new System.Windows.Forms.Label();
+            this.assistMC2 = new System.Windows.Forms.Label();
+            this.assistMA1 = new System.Windows.Forms.Label();
+            this.assistMG1 = new System.Windows.Forms.Label();
+            this.assistMF1 = new System.Windows.Forms.Label();
+            this.assistMD1 = new System.Windows.Forms.Label();
+            this.assistC6 = new System.Windows.Forms.Label();
+            this.assistB5 = new System.Windows.Forms.Label();
+            this.assistA5 = new System.Windows.Forms.Label();
+            this.assistG5 = new System.Windows.Forms.Label();
+            this.assistF5 = new System.Windows.Forms.Label();
+            this.assistE5 = new System.Windows.Forms.Label();
+            this.assistD5 = new System.Windows.Forms.Label();
+            this.assistC5 = new System.Windows.Forms.Label();
+            this.assistB4 = new System.Windows.Forms.Label();
+            this.assistA4 = new System.Windows.Forms.Label();
+            this.assistG4 = new System.Windows.Forms.Label();
+            this.assistF4 = new System.Windows.Forms.Label();
+            this.assistE4 = new System.Windows.Forms.Label();
+            this.assistD4 = new System.Windows.Forms.Label();
+            this.assistC4 = new System.Windows.Forms.Label();
+            this.assistB3 = new System.Windows.Forms.Label();
+            this.assistA3 = new System.Windows.Forms.Label();
+            this.assistMC1 = new System.Windows.Forms.Label();
+            this.assistG3 = new System.Windows.Forms.Label();
+            this.assistF3 = new System.Windows.Forms.Label();
+            this.assistE3 = new System.Windows.Forms.Label();
+            this.assistD3 = new System.Windows.Forms.Label();
+            this.assistC3 = new System.Windows.Forms.Label();
+            this.assistB2 = new System.Windows.Forms.Label();
+            this.assistA2 = new System.Windows.Forms.Label();
+            this.assistG2 = new System.Windows.Forms.Label();
+            this.assistF2 = new System.Windows.Forms.Label();
+            this.assistE2 = new System.Windows.Forms.Label();
+            this.assistD2 = new System.Windows.Forms.Label();
+            this.assistC2 = new System.Windows.Forms.Label();
+            this.assistB1 = new System.Windows.Forms.Label();
+            this.assistA1 = new System.Windows.Forms.Label();
+            this.assistG1 = new System.Windows.Forms.Label();
+            this.assistF1 = new System.Windows.Forms.Label();
+            this.assistE1 = new System.Windows.Forms.Label();
+            this.assistD1 = new System.Windows.Forms.Label();
+            this.assistC1 = new System.Windows.Forms.Label();
             this.keyMA5 = new System.Windows.Forms.Button();
             this.keyMA4 = new System.Windows.Forms.Button();
             this.keyMA2 = new System.Windows.Forms.Button();
@@ -96,7 +158,7 @@
             this.pianoContainer.Panel1.SuspendLayout();
             this.pianoContainer.Panel2.SuspendLayout();
             this.pianoContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pianoImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pianoContainer
@@ -109,11 +171,73 @@
             // pianoContainer.Panel1
             // 
             this.pianoContainer.Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.pianoContainer.Panel1.Controls.Add(this.pictureBox1);
+            this.pianoContainer.Panel1.Controls.Add(this.keyAssist);
+            this.pianoContainer.Panel1.Controls.Add(this.pianoImage);
             // 
             // pianoContainer.Panel2
             // 
             this.pianoContainer.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.pianoContainer.Panel2.Controls.Add(this.assistMG5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMA5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMF5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMD5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMC5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMA4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMG4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMF4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMD4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMC4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMG3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMD3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMF3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMA3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMC3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMA2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMG2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMF2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMD2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMC2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMA1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMG1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMF1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMD1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistC6);
+            this.pianoContainer.Panel2.Controls.Add(this.assistB5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistA5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistG5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistF5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistE5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistD5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistC5);
+            this.pianoContainer.Panel2.Controls.Add(this.assistB4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistA4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistG4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistF4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistE4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistD4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistC4);
+            this.pianoContainer.Panel2.Controls.Add(this.assistB3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistA3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistMC1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistG3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistF3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistE3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistD3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistC3);
+            this.pianoContainer.Panel2.Controls.Add(this.assistB2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistA2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistG2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistF2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistE2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistD2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistC2);
+            this.pianoContainer.Panel2.Controls.Add(this.assistB1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistA1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistG1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistF1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistE1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistD1);
+            this.pianoContainer.Panel2.Controls.Add(this.assistC1);
             this.pianoContainer.Panel2.Controls.Add(this.keyMA5);
             this.pianoContainer.Panel2.Controls.Add(this.keyMA4);
             this.pianoContainer.Panel2.Controls.Add(this.keyMA2);
@@ -175,20 +299,683 @@
             this.pianoContainer.Panel2.Controls.Add(this.keyD1);
             this.pianoContainer.Panel2.Controls.Add(this.keyC3);
             this.pianoContainer.Panel2.Controls.Add(this.keyC1);
-            this.pianoContainer.Size = new System.Drawing.Size(1292, 377);
-            this.pianoContainer.SplitterDistance = 162;
+            this.pianoContainer.Size = new System.Drawing.Size(1293, 376);
+            this.pianoContainer.SplitterDistance = 158;
             this.pianoContainer.TabIndex = 1;
             // 
-            // pictureBox1
+            // keyAssist
             // 
-            this.pictureBox1.Image = global::VPPianoProject.Properties.Resources._28FC9B29B848;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1292, 166);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.keyAssist.AutoSize = true;
+            this.keyAssist.BackColor = System.Drawing.Color.Black;
+            this.keyAssist.BackgroundImage = global::VPPianoProject.Properties.Resources.small;
+            this.keyAssist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.keyAssist.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.keyAssist.ForeColor = System.Drawing.Color.Snow;
+            this.keyAssist.Location = new System.Drawing.Point(51, 88);
+            this.keyAssist.Name = "keyAssist";
+            this.keyAssist.Size = new System.Drawing.Size(142, 29);
+            this.keyAssist.TabIndex = 1;
+            this.keyAssist.Text = "Key Assist";
+            this.keyAssist.UseVisualStyleBackColor = false;
+            this.keyAssist.CheckedChanged += new System.EventHandler(this.keyAssist_CheckedChanged);
+            // 
+            // pianoImage
+            // 
+            this.pianoImage.Image = global::VPPianoProject.Properties.Resources._28FC9B29B848;
+            this.pianoImage.Location = new System.Drawing.Point(1, 0);
+            this.pianoImage.Name = "pianoImage";
+            this.pianoImage.Size = new System.Drawing.Size(1292, 165);
+            this.pianoImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pianoImage.TabIndex = 0;
+            this.pianoImage.TabStop = false;
+            this.pianoImage.Click += new System.EventHandler(this.pianoImage_Click);
+            // 
+            // assistMG5
+            // 
+            this.assistMG5.AutoSize = true;
+            this.assistMG5.ForeColor = System.Drawing.Color.White;
+            this.assistMG5.Location = new System.Drawing.Point(1164, 69);
+            this.assistMG5.Name = "assistMG5";
+            this.assistMG5.Size = new System.Drawing.Size(34, 13);
+            this.assistMG5.TabIndex = 32;
+            this.assistMG5.Text = "Ctrl+F";
+            // 
+            // assistMA5
+            // 
+            this.assistMA5.AutoSize = true;
+            this.assistMA5.ForeColor = System.Drawing.Color.White;
+            this.assistMA5.Location = new System.Drawing.Point(1201, 35);
+            this.assistMA5.Name = "assistMA5";
+            this.assistMA5.Size = new System.Drawing.Size(36, 13);
+            this.assistMA5.TabIndex = 32;
+            this.assistMA5.Text = "Ctrl+G";
+            // 
+            // assistMF5
+            // 
+            this.assistMF5.AutoSize = true;
+            this.assistMF5.ForeColor = System.Drawing.Color.White;
+            this.assistMF5.Location = new System.Drawing.Point(1129, 35);
+            this.assistMF5.Name = "assistMF5";
+            this.assistMF5.Size = new System.Drawing.Size(36, 13);
+            this.assistMF5.TabIndex = 32;
+            this.assistMF5.Text = "Ctrl+D";
+            // 
+            // assistMD5
+            // 
+            this.assistMD5.AutoSize = true;
+            this.assistMD5.ForeColor = System.Drawing.Color.White;
+            this.assistMD5.Location = new System.Drawing.Point(1059, 35);
+            this.assistMD5.Name = "assistMD5";
+            this.assistMD5.Size = new System.Drawing.Size(35, 13);
+            this.assistMD5.TabIndex = 32;
+            this.assistMD5.Text = "Ctrl+S";
+            // 
+            // assistMC5
+            // 
+            this.assistMC5.AutoSize = true;
+            this.assistMC5.ForeColor = System.Drawing.Color.White;
+            this.assistMC5.Location = new System.Drawing.Point(1020, 35);
+            this.assistMC5.Name = "assistMC5";
+            this.assistMC5.Size = new System.Drawing.Size(35, 13);
+            this.assistMC5.TabIndex = 32;
+            this.assistMC5.Text = "Ctrl+A";
+            // 
+            // assistMA4
+            // 
+            this.assistMA4.AutoSize = true;
+            this.assistMA4.ForeColor = System.Drawing.Color.White;
+            this.assistMA4.Location = new System.Drawing.Point(954, 35);
+            this.assistMA4.Name = "assistMA4";
+            this.assistMA4.Size = new System.Drawing.Size(35, 13);
+            this.assistMA4.TabIndex = 32;
+            this.assistMA4.Text = "Ctrl+P";
+            // 
+            // assistMG4
+            // 
+            this.assistMG4.AutoSize = true;
+            this.assistMG4.ForeColor = System.Drawing.Color.White;
+            this.assistMG4.Location = new System.Drawing.Point(916, 69);
+            this.assistMG4.Name = "assistMG4";
+            this.assistMG4.Size = new System.Drawing.Size(36, 13);
+            this.assistMG4.TabIndex = 32;
+            this.assistMG4.Text = "Ctrl+O";
+            // 
+            // assistMF4
+            // 
+            this.assistMF4.AutoSize = true;
+            this.assistMF4.ForeColor = System.Drawing.Color.White;
+            this.assistMF4.Location = new System.Drawing.Point(880, 35);
+            this.assistMF4.Name = "assistMF4";
+            this.assistMF4.Size = new System.Drawing.Size(31, 13);
+            this.assistMF4.TabIndex = 32;
+            this.assistMF4.Text = "Ctrl+I";
+            // 
+            // assistMD4
+            // 
+            this.assistMD4.AutoSize = true;
+            this.assistMD4.ForeColor = System.Drawing.Color.White;
+            this.assistMD4.Location = new System.Drawing.Point(808, 35);
+            this.assistMD4.Name = "assistMD4";
+            this.assistMD4.Size = new System.Drawing.Size(36, 13);
+            this.assistMD4.TabIndex = 32;
+            this.assistMD4.Text = "Ctrl+U";
+            // 
+            // assistMC4
+            // 
+            this.assistMC4.AutoSize = true;
+            this.assistMC4.ForeColor = System.Drawing.Color.White;
+            this.assistMC4.Location = new System.Drawing.Point(770, 35);
+            this.assistMC4.Name = "assistMC4";
+            this.assistMC4.Size = new System.Drawing.Size(35, 13);
+            this.assistMC4.TabIndex = 32;
+            this.assistMC4.Text = "Ctrl+Y";
+            // 
+            // assistMG3
+            // 
+            this.assistMG3.AutoSize = true;
+            this.assistMG3.ForeColor = System.Drawing.Color.White;
+            this.assistMG3.Location = new System.Drawing.Point(665, 69);
+            this.assistMG3.Name = "assistMG3";
+            this.assistMG3.Size = new System.Drawing.Size(36, 13);
+            this.assistMG3.TabIndex = 32;
+            this.assistMG3.Text = "Ctrl+R";
+            // 
+            // assistMD3
+            // 
+            this.assistMD3.AutoSize = true;
+            this.assistMD3.ForeColor = System.Drawing.Color.White;
+            this.assistMD3.Location = new System.Drawing.Point(556, 35);
+            this.assistMD3.Name = "assistMD3";
+            this.assistMD3.Size = new System.Drawing.Size(39, 13);
+            this.assistMD3.TabIndex = 32;
+            this.assistMD3.Text = "Ctrl+W";
+            // 
+            // assistMF3
+            // 
+            this.assistMF3.AutoSize = true;
+            this.assistMF3.ForeColor = System.Drawing.Color.White;
+            this.assistMF3.Location = new System.Drawing.Point(628, 35);
+            this.assistMF3.Name = "assistMF3";
+            this.assistMF3.Size = new System.Drawing.Size(35, 13);
+            this.assistMF3.TabIndex = 32;
+            this.assistMF3.Text = "Ctrl+E";
+            // 
+            // assistMA3
+            // 
+            this.assistMA3.AutoSize = true;
+            this.assistMA3.ForeColor = System.Drawing.Color.White;
+            this.assistMA3.Location = new System.Drawing.Point(699, 35);
+            this.assistMA3.Name = "assistMA3";
+            this.assistMA3.Size = new System.Drawing.Size(35, 13);
+            this.assistMA3.TabIndex = 32;
+            this.assistMA3.Text = "Ctrl+T";
+            // 
+            // assistMC3
+            // 
+            this.assistMC3.AutoSize = true;
+            this.assistMC3.ForeColor = System.Drawing.Color.White;
+            this.assistMC3.Location = new System.Drawing.Point(516, 35);
+            this.assistMC3.Name = "assistMC3";
+            this.assistMC3.Size = new System.Drawing.Size(36, 13);
+            this.assistMC3.TabIndex = 32;
+            this.assistMC3.Text = "Ctrl+Q";
+            // 
+            // assistMA2
+            // 
+            this.assistMA2.AutoSize = true;
+            this.assistMA2.ForeColor = System.Drawing.Color.White;
+            this.assistMA2.Location = new System.Drawing.Point(450, 35);
+            this.assistMA2.Name = "assistMA2";
+            this.assistMA2.Size = new System.Drawing.Size(34, 13);
+            this.assistMA2.TabIndex = 32;
+            this.assistMA2.Text = "Ctrl+0";
+            // 
+            // assistMG2
+            // 
+            this.assistMG2.AutoSize = true;
+            this.assistMG2.ForeColor = System.Drawing.Color.White;
+            this.assistMG2.Location = new System.Drawing.Point(413, 69);
+            this.assistMG2.Name = "assistMG2";
+            this.assistMG2.Size = new System.Drawing.Size(34, 13);
+            this.assistMG2.TabIndex = 32;
+            this.assistMG2.Text = "Ctrl+9";
+            // 
+            // assistMF2
+            // 
+            this.assistMF2.AutoSize = true;
+            this.assistMF2.ForeColor = System.Drawing.Color.White;
+            this.assistMF2.Location = new System.Drawing.Point(379, 35);
+            this.assistMF2.Name = "assistMF2";
+            this.assistMF2.Size = new System.Drawing.Size(34, 13);
+            this.assistMF2.TabIndex = 32;
+            this.assistMF2.Text = "Ctrl+8";
+            // 
+            // assistMD2
+            // 
+            this.assistMD2.AutoSize = true;
+            this.assistMD2.ForeColor = System.Drawing.Color.White;
+            this.assistMD2.Location = new System.Drawing.Point(305, 35);
+            this.assistMD2.Name = "assistMD2";
+            this.assistMD2.Size = new System.Drawing.Size(34, 13);
+            this.assistMD2.TabIndex = 32;
+            this.assistMD2.Text = "Ctrl+7";
+            // 
+            // assistMC2
+            // 
+            this.assistMC2.AutoSize = true;
+            this.assistMC2.ForeColor = System.Drawing.Color.White;
+            this.assistMC2.Location = new System.Drawing.Point(268, 35);
+            this.assistMC2.Name = "assistMC2";
+            this.assistMC2.Size = new System.Drawing.Size(34, 13);
+            this.assistMC2.TabIndex = 32;
+            this.assistMC2.Text = "Ctrl+6";
+            // 
+            // assistMA1
+            // 
+            this.assistMA1.AutoSize = true;
+            this.assistMA1.ForeColor = System.Drawing.Color.White;
+            this.assistMA1.Location = new System.Drawing.Point(197, 35);
+            this.assistMA1.Name = "assistMA1";
+            this.assistMA1.Size = new System.Drawing.Size(34, 13);
+            this.assistMA1.TabIndex = 32;
+            this.assistMA1.Text = "Ctrl+5";
+            // 
+            // assistMG1
+            // 
+            this.assistMG1.AutoSize = true;
+            this.assistMG1.ForeColor = System.Drawing.Color.White;
+            this.assistMG1.Location = new System.Drawing.Point(162, 69);
+            this.assistMG1.Name = "assistMG1";
+            this.assistMG1.Size = new System.Drawing.Size(34, 13);
+            this.assistMG1.TabIndex = 32;
+            this.assistMG1.Text = "Ctrl+4";
+            // 
+            // assistMF1
+            // 
+            this.assistMF1.AutoSize = true;
+            this.assistMF1.ForeColor = System.Drawing.Color.White;
+            this.assistMF1.Location = new System.Drawing.Point(126, 35);
+            this.assistMF1.Name = "assistMF1";
+            this.assistMF1.Size = new System.Drawing.Size(34, 13);
+            this.assistMF1.TabIndex = 32;
+            this.assistMF1.Text = "Ctrl+3";
+            // 
+            // assistMD1
+            // 
+            this.assistMD1.AutoSize = true;
+            this.assistMD1.ForeColor = System.Drawing.Color.White;
+            this.assistMD1.Location = new System.Drawing.Point(55, 35);
+            this.assistMD1.Name = "assistMD1";
+            this.assistMD1.Size = new System.Drawing.Size(34, 13);
+            this.assistMD1.TabIndex = 32;
+            this.assistMD1.Text = "Ctrl+2";
+            // 
+            // assistC6
+            // 
+            this.assistC6.AutoSize = true;
+            this.assistC6.BackColor = System.Drawing.Color.White;
+            this.assistC6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistC6.Location = new System.Drawing.Point(1259, 154);
+            this.assistC6.Name = "assistC6";
+            this.assistC6.Size = new System.Drawing.Size(27, 24);
+            this.assistC6.TabIndex = 31;
+            this.assistC6.Text = "M";
+            // 
+            // assistB5
+            // 
+            this.assistB5.AutoSize = true;
+            this.assistB5.BackColor = System.Drawing.Color.White;
+            this.assistB5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistB5.Location = new System.Drawing.Point(1224, 154);
+            this.assistB5.Name = "assistB5";
+            this.assistB5.Size = new System.Drawing.Size(25, 24);
+            this.assistB5.TabIndex = 31;
+            this.assistB5.Text = "N";
+            // 
+            // assistA5
+            // 
+            this.assistA5.AutoSize = true;
+            this.assistA5.BackColor = System.Drawing.Color.White;
+            this.assistA5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistA5.Location = new System.Drawing.Point(1189, 154);
+            this.assistA5.Name = "assistA5";
+            this.assistA5.Size = new System.Drawing.Size(23, 24);
+            this.assistA5.TabIndex = 31;
+            this.assistA5.Text = "B";
+            // 
+            // assistG5
+            // 
+            this.assistG5.AutoSize = true;
+            this.assistG5.BackColor = System.Drawing.Color.White;
+            this.assistG5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistG5.Location = new System.Drawing.Point(1152, 154);
+            this.assistG5.Name = "assistG5";
+            this.assistG5.Size = new System.Drawing.Size(24, 24);
+            this.assistG5.TabIndex = 31;
+            this.assistG5.Text = "V";
+            // 
+            // assistF5
+            // 
+            this.assistF5.AutoSize = true;
+            this.assistF5.BackColor = System.Drawing.Color.White;
+            this.assistF5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistF5.Location = new System.Drawing.Point(1117, 154);
+            this.assistF5.Name = "assistF5";
+            this.assistF5.Size = new System.Drawing.Size(24, 24);
+            this.assistF5.TabIndex = 31;
+            this.assistF5.Text = "C";
+            // 
+            // assistE5
+            // 
+            this.assistE5.AutoSize = true;
+            this.assistE5.BackColor = System.Drawing.Color.White;
+            this.assistE5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistE5.Location = new System.Drawing.Point(1081, 154);
+            this.assistE5.Name = "assistE5";
+            this.assistE5.Size = new System.Drawing.Size(25, 24);
+            this.assistE5.TabIndex = 31;
+            this.assistE5.Text = "X";
+            // 
+            // assistD5
+            // 
+            this.assistD5.AutoSize = true;
+            this.assistD5.BackColor = System.Drawing.Color.White;
+            this.assistD5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistD5.Location = new System.Drawing.Point(1047, 154);
+            this.assistD5.Name = "assistD5";
+            this.assistD5.Size = new System.Drawing.Size(23, 24);
+            this.assistD5.TabIndex = 31;
+            this.assistD5.Text = "Z";
+            // 
+            // assistC5
+            // 
+            this.assistC5.AutoSize = true;
+            this.assistC5.BackColor = System.Drawing.Color.White;
+            this.assistC5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistC5.Location = new System.Drawing.Point(1013, 154);
+            this.assistC5.Name = "assistC5";
+            this.assistC5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.assistC5.Size = new System.Drawing.Size(21, 24);
+            this.assistC5.TabIndex = 31;
+            this.assistC5.Text = "L";
+            // 
+            // assistB4
+            // 
+            this.assistB4.AutoSize = true;
+            this.assistB4.BackColor = System.Drawing.Color.White;
+            this.assistB4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistB4.Location = new System.Drawing.Point(977, 154);
+            this.assistB4.Name = "assistB4";
+            this.assistB4.Size = new System.Drawing.Size(23, 24);
+            this.assistB4.TabIndex = 31;
+            this.assistB4.Text = "K";
+            // 
+            // assistA4
+            // 
+            this.assistA4.AutoSize = true;
+            this.assistA4.BackColor = System.Drawing.Color.White;
+            this.assistA4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistA4.Location = new System.Drawing.Point(942, 154);
+            this.assistA4.Name = "assistA4";
+            this.assistA4.Size = new System.Drawing.Size(20, 24);
+            this.assistA4.TabIndex = 31;
+            this.assistA4.Text = "J";
+            // 
+            // assistG4
+            // 
+            this.assistG4.AutoSize = true;
+            this.assistG4.BackColor = System.Drawing.Color.White;
+            this.assistG4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistG4.Location = new System.Drawing.Point(904, 154);
+            this.assistG4.Name = "assistG4";
+            this.assistG4.Size = new System.Drawing.Size(25, 24);
+            this.assistG4.TabIndex = 31;
+            this.assistG4.Text = "H";
+            // 
+            // assistF4
+            // 
+            this.assistF4.AutoSize = true;
+            this.assistF4.BackColor = System.Drawing.Color.White;
+            this.assistF4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistF4.Location = new System.Drawing.Point(868, 154);
+            this.assistF4.Name = "assistF4";
+            this.assistF4.Size = new System.Drawing.Size(25, 24);
+            this.assistF4.TabIndex = 31;
+            this.assistF4.Text = "G";
+            // 
+            // assistE4
+            // 
+            this.assistE4.AutoSize = true;
+            this.assistE4.BackColor = System.Drawing.Color.White;
+            this.assistE4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistE4.Location = new System.Drawing.Point(834, 154);
+            this.assistE4.Name = "assistE4";
+            this.assistE4.Size = new System.Drawing.Size(23, 24);
+            this.assistE4.TabIndex = 31;
+            this.assistE4.Text = "F";
+            // 
+            // assistD4
+            // 
+            this.assistD4.AutoSize = true;
+            this.assistD4.BackColor = System.Drawing.Color.White;
+            this.assistD4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistD4.Location = new System.Drawing.Point(797, 154);
+            this.assistD4.Name = "assistD4";
+            this.assistD4.Size = new System.Drawing.Size(24, 24);
+            this.assistD4.TabIndex = 31;
+            this.assistD4.Text = "D";
+            // 
+            // assistC4
+            // 
+            this.assistC4.AutoSize = true;
+            this.assistC4.BackColor = System.Drawing.Color.White;
+            this.assistC4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistC4.Location = new System.Drawing.Point(762, 154);
+            this.assistC4.Name = "assistC4";
+            this.assistC4.Size = new System.Drawing.Size(23, 24);
+            this.assistC4.TabIndex = 31;
+            this.assistC4.Text = "S";
+            // 
+            // assistB3
+            // 
+            this.assistB3.AutoSize = true;
+            this.assistB3.BackColor = System.Drawing.Color.White;
+            this.assistB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistB3.Location = new System.Drawing.Point(726, 154);
+            this.assistB3.Name = "assistB3";
+            this.assistB3.Size = new System.Drawing.Size(24, 24);
+            this.assistB3.TabIndex = 31;
+            this.assistB3.Text = "A";
+            // 
+            // assistA3
+            // 
+            this.assistA3.AutoSize = true;
+            this.assistA3.BackColor = System.Drawing.Color.White;
+            this.assistA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistA3.Location = new System.Drawing.Point(690, 154);
+            this.assistA3.Name = "assistA3";
+            this.assistA3.Size = new System.Drawing.Size(23, 24);
+            this.assistA3.TabIndex = 31;
+            this.assistA3.Text = "P";
+            // 
+            // assistMC1
+            // 
+            this.assistMC1.AutoSize = true;
+            this.assistMC1.ForeColor = System.Drawing.Color.White;
+            this.assistMC1.Location = new System.Drawing.Point(14, 35);
+            this.assistMC1.Name = "assistMC1";
+            this.assistMC1.Size = new System.Drawing.Size(34, 13);
+            this.assistMC1.TabIndex = 32;
+            this.assistMC1.Text = "Ctrl+1";
+            // 
+            // assistG3
+            // 
+            this.assistG3.AutoSize = true;
+            this.assistG3.BackColor = System.Drawing.Color.White;
+            this.assistG3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistG3.Location = new System.Drawing.Point(654, 154);
+            this.assistG3.Name = "assistG3";
+            this.assistG3.Size = new System.Drawing.Size(26, 24);
+            this.assistG3.TabIndex = 31;
+            this.assistG3.Text = "O";
+            // 
+            // assistF3
+            // 
+            this.assistF3.AutoSize = true;
+            this.assistF3.BackColor = System.Drawing.Color.White;
+            this.assistF3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistF3.Location = new System.Drawing.Point(622, 154);
+            this.assistF3.Name = "assistF3";
+            this.assistF3.Size = new System.Drawing.Size(15, 24);
+            this.assistF3.TabIndex = 31;
+            this.assistF3.Text = "I";
+            // 
+            // assistE3
+            // 
+            this.assistE3.AutoSize = true;
+            this.assistE3.BackColor = System.Drawing.Color.White;
+            this.assistE3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistE3.Location = new System.Drawing.Point(580, 154);
+            this.assistE3.Name = "assistE3";
+            this.assistE3.Size = new System.Drawing.Size(24, 24);
+            this.assistE3.TabIndex = 31;
+            this.assistE3.Text = "U";
+            // 
+            // assistD3
+            // 
+            this.assistD3.AutoSize = true;
+            this.assistD3.BackColor = System.Drawing.Color.White;
+            this.assistD3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistD3.Location = new System.Drawing.Point(546, 154);
+            this.assistD3.Name = "assistD3";
+            this.assistD3.Size = new System.Drawing.Size(23, 24);
+            this.assistD3.TabIndex = 31;
+            this.assistD3.Text = "Y";
+            // 
+            // assistC3
+            // 
+            this.assistC3.AutoSize = true;
+            this.assistC3.BackColor = System.Drawing.Color.White;
+            this.assistC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistC3.Location = new System.Drawing.Point(509, 154);
+            this.assistC3.Name = "assistC3";
+            this.assistC3.Size = new System.Drawing.Size(23, 24);
+            this.assistC3.TabIndex = 31;
+            this.assistC3.Text = "T";
+            // 
+            // assistB2
+            // 
+            this.assistB2.AutoSize = true;
+            this.assistB2.BackColor = System.Drawing.Color.White;
+            this.assistB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistB2.Location = new System.Drawing.Point(474, 154);
+            this.assistB2.Name = "assistB2";
+            this.assistB2.Size = new System.Drawing.Size(24, 24);
+            this.assistB2.TabIndex = 31;
+            this.assistB2.Text = "R";
+            // 
+            // assistA2
+            // 
+            this.assistA2.AutoSize = true;
+            this.assistA2.BackColor = System.Drawing.Color.White;
+            this.assistA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistA2.Location = new System.Drawing.Point(437, 154);
+            this.assistA2.Name = "assistA2";
+            this.assistA2.Size = new System.Drawing.Size(24, 24);
+            this.assistA2.TabIndex = 31;
+            this.assistA2.Text = "E";
+            // 
+            // assistG2
+            // 
+            this.assistG2.AutoSize = true;
+            this.assistG2.BackColor = System.Drawing.Color.White;
+            this.assistG2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistG2.Location = new System.Drawing.Point(399, 154);
+            this.assistG2.Name = "assistG2";
+            this.assistG2.Size = new System.Drawing.Size(29, 24);
+            this.assistG2.TabIndex = 31;
+            this.assistG2.Text = "W";
+            // 
+            // assistF2
+            // 
+            this.assistF2.AutoSize = true;
+            this.assistF2.BackColor = System.Drawing.Color.White;
+            this.assistF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistF2.Location = new System.Drawing.Point(364, 154);
+            this.assistF2.Name = "assistF2";
+            this.assistF2.Size = new System.Drawing.Size(26, 24);
+            this.assistF2.TabIndex = 31;
+            this.assistF2.Text = "Q";
+            // 
+            // assistE2
+            // 
+            this.assistE2.AutoSize = true;
+            this.assistE2.BackColor = System.Drawing.Color.White;
+            this.assistE2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistE2.Location = new System.Drawing.Point(330, 154);
+            this.assistE2.Name = "assistE2";
+            this.assistE2.Size = new System.Drawing.Size(21, 24);
+            this.assistE2.TabIndex = 31;
+            this.assistE2.Text = "0";
+            // 
+            // assistD2
+            // 
+            this.assistD2.AutoSize = true;
+            this.assistD2.BackColor = System.Drawing.Color.White;
+            this.assistD2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistD2.Location = new System.Drawing.Point(294, 154);
+            this.assistD2.Name = "assistD2";
+            this.assistD2.Size = new System.Drawing.Size(21, 24);
+            this.assistD2.TabIndex = 31;
+            this.assistD2.Text = "9";
+            // 
+            // assistC2
+            // 
+            this.assistC2.AutoSize = true;
+            this.assistC2.BackColor = System.Drawing.Color.White;
+            this.assistC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistC2.Location = new System.Drawing.Point(258, 154);
+            this.assistC2.Name = "assistC2";
+            this.assistC2.Size = new System.Drawing.Size(21, 24);
+            this.assistC2.TabIndex = 31;
+            this.assistC2.Text = "8";
+            // 
+            // assistB1
+            // 
+            this.assistB1.AutoSize = true;
+            this.assistB1.BackColor = System.Drawing.Color.White;
+            this.assistB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistB1.Location = new System.Drawing.Point(222, 154);
+            this.assistB1.Name = "assistB1";
+            this.assistB1.Size = new System.Drawing.Size(21, 24);
+            this.assistB1.TabIndex = 31;
+            this.assistB1.Text = "7";
+            // 
+            // assistA1
+            // 
+            this.assistA1.AutoSize = true;
+            this.assistA1.BackColor = System.Drawing.Color.White;
+            this.assistA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistA1.Location = new System.Drawing.Point(186, 154);
+            this.assistA1.Name = "assistA1";
+            this.assistA1.Size = new System.Drawing.Size(21, 24);
+            this.assistA1.TabIndex = 31;
+            this.assistA1.Text = "6";
+            // 
+            // assistG1
+            // 
+            this.assistG1.AutoSize = true;
+            this.assistG1.BackColor = System.Drawing.Color.White;
+            this.assistG1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistG1.Location = new System.Drawing.Point(150, 154);
+            this.assistG1.Name = "assistG1";
+            this.assistG1.Size = new System.Drawing.Size(21, 24);
+            this.assistG1.TabIndex = 31;
+            this.assistG1.Text = "5";
+            // 
+            // assistF1
+            // 
+            this.assistF1.AutoSize = true;
+            this.assistF1.BackColor = System.Drawing.Color.White;
+            this.assistF1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistF1.Location = new System.Drawing.Point(114, 154);
+            this.assistF1.Name = "assistF1";
+            this.assistF1.Size = new System.Drawing.Size(21, 24);
+            this.assistF1.TabIndex = 31;
+            this.assistF1.Text = "4";
+            // 
+            // assistE1
+            // 
+            this.assistE1.AutoSize = true;
+            this.assistE1.BackColor = System.Drawing.Color.White;
+            this.assistE1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistE1.Location = new System.Drawing.Point(78, 154);
+            this.assistE1.Name = "assistE1";
+            this.assistE1.Size = new System.Drawing.Size(21, 24);
+            this.assistE1.TabIndex = 31;
+            this.assistE1.Text = "3";
+            // 
+            // assistD1
+            // 
+            this.assistD1.AutoSize = true;
+            this.assistD1.BackColor = System.Drawing.Color.White;
+            this.assistD1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistD1.Location = new System.Drawing.Point(42, 154);
+            this.assistD1.Name = "assistD1";
+            this.assistD1.Size = new System.Drawing.Size(21, 24);
+            this.assistD1.TabIndex = 31;
+            this.assistD1.Text = "2";
+            // 
+            // assistC1
+            // 
+            this.assistC1.AutoSize = true;
+            this.assistC1.BackColor = System.Drawing.Color.White;
+            this.assistC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assistC1.Location = new System.Drawing.Point(4, 154);
+            this.assistC1.Name = "assistC1";
+            this.assistC1.Size = new System.Drawing.Size(21, 24);
+            this.assistC1.TabIndex = 31;
+            this.assistC1.Text = "1";
             // 
             // keyMA5
             // 
@@ -373,7 +1160,7 @@
             // 
             this.keyD4.BackColor = System.Drawing.Color.White;
             this.keyD4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.keyD4.Location = new System.Drawing.Point(792, 4);
+            this.keyD4.Location = new System.Drawing.Point(792, 3);
             this.keyD4.Name = "keyD4";
             this.keyD4.Size = new System.Drawing.Size(33, 207);
             this.keyD4.TabIndex = 30;
@@ -549,7 +1336,7 @@
             // 
             this.keyE4.BackColor = System.Drawing.Color.White;
             this.keyE4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.keyE4.Location = new System.Drawing.Point(828, 4);
+            this.keyE4.Location = new System.Drawing.Point(828, 3);
             this.keyE4.Name = "keyE4";
             this.keyE4.Size = new System.Drawing.Size(33, 207);
             this.keyE4.TabIndex = 25;
@@ -582,7 +1369,7 @@
             // 
             this.keyC4.BackColor = System.Drawing.Color.White;
             this.keyC4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.keyC4.Location = new System.Drawing.Point(756, 4);
+            this.keyC4.Location = new System.Drawing.Point(756, 3);
             this.keyC4.Name = "keyC4";
             this.keyC4.Size = new System.Drawing.Size(33, 207);
             this.keyC4.TabIndex = 24;
@@ -872,7 +1659,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1293, 380);
+            this.ClientSize = new System.Drawing.Size(1290, 378);
             this.Controls.Add(this.pianoContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -880,16 +1667,18 @@
             this.MaximizeBox = false;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Game";
+            this.Text = "Piano";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Game_FormClosing);
             this.Load += new System.EventHandler(this.Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Game_KeyPress);
             this.pianoContainer.Panel1.ResumeLayout(false);
+            this.pianoContainer.Panel1.PerformLayout();
             this.pianoContainer.Panel2.ResumeLayout(false);
+            this.pianoContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).EndInit();
             this.pianoContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pianoImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -909,7 +1698,7 @@
         private System.Windows.Forms.Button keyC1M;
         private System.Windows.Forms.Button keyD1;
         private System.Windows.Forms.Button keyC1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pianoImage;
         private System.Windows.Forms.Button keyMA2;
         private System.Windows.Forms.Button keyMD2;
         private System.Windows.Forms.Button keyMG2;
@@ -959,5 +1748,72 @@
         private System.Windows.Forms.Button keyA5;
         private System.Windows.Forms.Button keyE5;
         private System.Windows.Forms.Button keyC5;
+        private System.Windows.Forms.CheckBox keyAssist;
+        private System.Windows.Forms.Label assistC1;
+        private System.Windows.Forms.Label assistMC1;
+        private System.Windows.Forms.Label assistMG5;
+        private System.Windows.Forms.Label assistMA5;
+        private System.Windows.Forms.Label assistMF5;
+        private System.Windows.Forms.Label assistMD5;
+        private System.Windows.Forms.Label assistMC5;
+        private System.Windows.Forms.Label assistMA4;
+        private System.Windows.Forms.Label assistMG4;
+        private System.Windows.Forms.Label assistMF4;
+        private System.Windows.Forms.Label assistMD4;
+        private System.Windows.Forms.Label assistMC4;
+        private System.Windows.Forms.Label assistMG3;
+        private System.Windows.Forms.Label assistMD3;
+        private System.Windows.Forms.Label assistMF3;
+        private System.Windows.Forms.Label assistMA3;
+        private System.Windows.Forms.Label assistMC3;
+        private System.Windows.Forms.Label assistMA2;
+        private System.Windows.Forms.Label assistMG2;
+        private System.Windows.Forms.Label assistMF2;
+        private System.Windows.Forms.Label assistMD2;
+        private System.Windows.Forms.Label assistMC2;
+        private System.Windows.Forms.Label assistMA1;
+        private System.Windows.Forms.Label assistMG1;
+        private System.Windows.Forms.Label assistMF1;
+        private System.Windows.Forms.Label assistMD1;
+        private System.Windows.Forms.Label assistA4;
+        private System.Windows.Forms.Label assistG4;
+        private System.Windows.Forms.Label assistF4;
+        private System.Windows.Forms.Label assistE4;
+        private System.Windows.Forms.Label assistD4;
+        private System.Windows.Forms.Label assistC4;
+        
+        private System.Windows.Forms.Label assistB3;
+        
+        private System.Windows.Forms.Label assistA3;
+        private System.Windows.Forms.Label assistG3;
+        private System.Windows.Forms.Label assistF3;
+        private System.Windows.Forms.Label assistE3;
+        private System.Windows.Forms.Label assistD3;
+        private System.Windows.Forms.Label assistC3;
+        private System.Windows.Forms.Label assistB2;
+        private System.Windows.Forms.Label assistA2;
+        private System.Windows.Forms.Label assistG2;
+        private System.Windows.Forms.Label assistF2;
+        private System.Windows.Forms.Label assistE2;
+        private System.Windows.Forms.Label assistD2;
+        private System.Windows.Forms.Label assistC2;
+        private System.Windows.Forms.Label assistB1;
+        private System.Windows.Forms.Label assistA1;
+        private System.Windows.Forms.Label assistG1;
+        
+        private System.Windows.Forms.Label assistF1;
+      
+        private System.Windows.Forms.Label assistE1;
+        private System.Windows.Forms.Label assistD1;
+        private System.Windows.Forms.Label assistC6;
+        private System.Windows.Forms.Label assistA5;
+        private System.Windows.Forms.Label assistG5;
+        private System.Windows.Forms.Label assistF5;
+        private System.Windows.Forms.Label assistE5;
+        private System.Windows.Forms.Label assistD5;
+        private System.Windows.Forms.Label assistC5;
+        private System.Windows.Forms.Label assistB4;
+        
+        private System.Windows.Forms.Label assistB5;
     }
 }

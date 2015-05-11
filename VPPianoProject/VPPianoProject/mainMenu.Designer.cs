@@ -49,6 +49,7 @@
             // 
             this.labelPlay.AutoSize = true;
             this.labelPlay.BackColor = System.Drawing.Color.Transparent;
+            this.labelPlay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelPlay.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlay.ForeColor = System.Drawing.Color.LightGray;
             this.labelPlay.Location = new System.Drawing.Point(0, 9);

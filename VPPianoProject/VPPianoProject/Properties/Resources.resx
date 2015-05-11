@@ -133,17 +133,14 @@
   <data name="C25Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C25Start.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="G32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\G32.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="E29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E29.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="g_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\g#33.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -166,14 +163,23 @@
   <data name="surprising-instrument" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\surprising-instrument.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="28FC9B29B848" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\28FC9B29B848.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="d_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\d#28.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="f_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f#43.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="c_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c#38.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="1386985357" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1386985357.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chapter-6-007-piano-puzzle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chapter-6-007-piano-puzzle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="c37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c37.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -199,17 +205,14 @@
   <data name="g_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\g#45.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="b48Last" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b48Last.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="quit_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quit_exit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="b36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\b36.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="f_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\f#43.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="d_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\d#40.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -229,10 +232,10 @@
   <data name="f42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\f42.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chapter-6-007-piano-puzzle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chapter-6-007-piano-puzzle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="b48Last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b48Last.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="28FC9B29B848" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\28FC9B29B848.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

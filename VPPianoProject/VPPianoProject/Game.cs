@@ -15,10 +15,84 @@ namespace VPPianoProject
         public Game()
         {
             InitializeComponent();
+            assistC1.Visible = false;
+            assistMC1.Visible = false;
+            assistD1.Visible = false;
+            assistMD1.Visible = false;
+            assistE1.Visible = false;
+            
+            assistF1.Visible = false;
+            assistMF1.Visible = false;
+            assistG1.Visible = false;
+            assistMG1.Visible = false;
+            assistA1.Visible = false;
+            assistMA1.Visible = false;
+            assistB1.Visible = false;
+
+            assistC2.Visible = false;
+            assistMC2.Visible = false;
+            assistD2.Visible = false;
+            assistMD2.Visible = false;
+            assistE2.Visible = false;
+
+            assistF2.Visible = false;
+            assistMF2.Visible = false;
+            assistG2.Visible = false;
+            assistMG2.Visible = false;
+            assistA2.Visible = false;
+            assistMA2.Visible = false;
+            assistB2.Visible = false;
+
+            assistC3.Visible = false;
+            assistMC3.Visible = false;
+            assistD3.Visible = false;
+            assistMD3.Visible = false;
+            assistE3.Visible = false;
+
+            assistF3.Visible = false;
+            assistMF3.Visible = false;
+            assistG3.Visible = false;
+            assistMG3.Visible = false;
+            assistA3.Visible = false;
+            assistMA3.Visible = false;
+            assistB3.Visible = false;
+
+            
+            assistC4.Visible = false;
+            assistMC4.Visible = false;
+            assistD4.Visible = false;
+            assistMD4.Visible = false;
+            assistE4.Visible = false;
+            
+            assistF4.Visible = false;
+            assistMF4.Visible = false;
+            assistG4.Visible = false;
+            assistMG4.Visible = false;
+            assistA4.Visible = false;
+            assistMA4.Visible = false;
+            assistB4.Visible = false;
+
+            assistC5.Visible = false;
+            assistMC5.Visible = false;
+            assistD5.Visible = false;
+            assistMD5.Visible = false;
+            assistE5.Visible = false;
+
+            assistF5.Visible = false;
+            assistMF5.Visible = false;
+            assistG5.Visible = false;
+            assistMG5.Visible = false;
+            assistA5.Visible = false;
+            assistMA5.Visible = false;
+            assistB5.Visible = false;
+
+            assistC6.Visible = false;
+            
         }
 
         //SoundPlayer keySound = new SoundPlayer();   
-
+        
+        
 //       ++++++++++++++++++++++++++++++++++++  Sound for each Key on Piano ++++++++++++++++++++++++++++++++++++++
 
         private void keyC1_Click(object sender, EventArgs e)
@@ -728,10 +802,169 @@ namespace VPPianoProject
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pianoImage_Click(object sender, EventArgs e)
         {
 
         }
+        
+        private void keyAssist_CheckedChanged(object sender, EventArgs e)
+        {
+
+
+            if (keyAssist.Checked == false)
+            {
+                assistC1.Visible = false;
+                assistMC1.Visible = false;
+                assistD1.Visible = false;
+                assistMD1.Visible = false;
+                assistE1.Visible = false;
+
+                assistF1.Visible = false;
+                assistMF1.Visible = false;
+                assistG1.Visible = false;
+                assistMG1.Visible = false;
+                assistA1.Visible = false;
+                assistMA1.Visible = false;
+                assistB1.Visible = false;
+
+                assistC2.Visible = false;
+                assistMC2.Visible = false;
+                assistD2.Visible = false;
+                assistMD2.Visible = false;
+                assistE2.Visible = false;
+
+                assistF2.Visible = false;
+                assistMF2.Visible = false;
+                assistG2.Visible = false;
+                assistMG2.Visible = false;
+                assistA2.Visible = false;
+                assistMA2.Visible = false;
+                assistB2.Visible = false;
+
+                assistC3.Visible = false;
+                assistMC3.Visible = false;
+                assistD3.Visible = false;
+                assistMD3.Visible = false;
+                assistE3.Visible = false;
+
+                assistF3.Visible = false;
+                assistMF3.Visible = false;
+                assistG3.Visible = false;
+                assistMG3.Visible = false;
+                assistA3.Visible = false;
+                assistMA3.Visible = false;
+                assistB3.Visible = false;
+
+
+                assistC4.Visible = false;
+                assistMC4.Visible = false;
+                assistD4.Visible = false;
+                assistMD4.Visible = false;
+                assistE4.Visible = false;
+
+                assistF4.Visible = false;
+                assistMF4.Visible = false;
+                assistG4.Visible = false;
+                assistMG4.Visible = false;
+                assistA4.Visible = false;
+                assistMA4.Visible = false;
+                assistB4.Visible = false;
+
+                assistC5.Visible = false;
+                assistMC5.Visible = false;
+                assistD5.Visible = false;
+                assistMD5.Visible = false;
+                assistE5.Visible = false;
+
+                assistF5.Visible = false;
+                assistMF5.Visible = false;
+                assistG5.Visible = false;
+                assistMG5.Visible = false;
+                assistA5.Visible = false;
+                assistMA5.Visible = false;
+                assistB5.Visible = false;
+
+                assistC6.Visible = false;
+            }
+            else
+            {
+                assistC1.Visible = true;
+                assistMC1.Visible = true;
+                assistD1.Visible = true;
+                assistMD1.Visible = true;
+                assistE1.Visible = true;
+
+                assistF1.Visible = true;
+                assistMF1.Visible = true;
+                assistG1.Visible = true;
+                assistMG1.Visible = true;
+                assistA1.Visible = true;
+                assistMA1.Visible = true;
+                assistB1.Visible = true;
+
+                assistC2.Visible = true;
+                assistMC2.Visible = true;
+                assistD2.Visible = true;
+                assistMD2.Visible = true;
+                assistE2.Visible = true;
+
+                assistF2.Visible = true;
+                assistMF2.Visible = true;
+                assistG2.Visible = true;
+                assistMG2.Visible = true;
+                assistA2.Visible = true;
+                assistMA2.Visible = true;
+                assistB2.Visible = true;
+
+                assistC3.Visible = true;
+                assistMC3.Visible = true;
+                assistD3.Visible = true;
+                assistMD3.Visible = true;
+                assistE3.Visible = true;
+
+                assistF3.Visible = true;
+                assistMF3.Visible = true;
+                assistG3.Visible = true;
+                assistMG3.Visible = true;
+                assistA3.Visible = true;
+                assistMA3.Visible = true;
+                assistB3.Visible = true;
+
+
+                assistC4.Visible = true;
+                assistMC4.Visible = true;
+                assistD4.Visible = true;
+                assistMD4.Visible = true;
+                assistE4.Visible = true;
+
+                assistF4.Visible = true;
+                assistMF4.Visible = true;
+                assistG4.Visible = true;
+                assistMG4.Visible = true;
+                assistA4.Visible = true;
+                assistMA4.Visible = true;
+                assistB4.Visible = true;
+
+                assistC5.Visible = true;
+                assistMC5.Visible = true;
+                assistD5.Visible = true;
+                assistMD5.Visible = true;
+                assistE5.Visible = true;
+
+                assistF5.Visible = true;
+                assistMF5.Visible = true;
+                assistG5.Visible = true;
+                assistMG5.Visible = true;
+                assistA5.Visible = true;
+                assistMA5.Visible = true;
+                assistB5.Visible = true;
+
+                assistC6.Visible = true;
+            }
+        }
+
+      
+
 
         /*
         private void button1_Click(object sender, EventArgs e)
