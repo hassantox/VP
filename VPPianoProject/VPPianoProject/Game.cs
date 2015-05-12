@@ -97,20 +97,63 @@ namespace VPPianoProject
 
         private void keyC1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c1);           
             keySound.Play();      
+            }
+
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C1_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o1);
+                keySound.Play();
+            }
         }
 
         private void keyC1M_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c_2);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C1_1_mezzo_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o2);
+                keySound.Play();
+            }
         }
 
         private void keyD1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d3);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D1_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o3);
+                keySound.Play();
+            }
         }
 
         private void keyMD1_Click(object sender, EventArgs e)

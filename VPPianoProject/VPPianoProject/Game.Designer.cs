@@ -154,6 +154,10 @@
             this.keyD1 = new System.Windows.Forms.Button();
             this.keyC3 = new System.Windows.Forms.Button();
             this.keyC1 = new System.Windows.Forms.Button();
+            this.textSounds = new System.Windows.Forms.Label();
+            this.notePiano = new System.Windows.Forms.RadioButton();
+            this.noteOrgan = new System.Windows.Forms.RadioButton();
+            this.noteBass = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).BeginInit();
             this.pianoContainer.Panel1.SuspendLayout();
             this.pianoContainer.Panel2.SuspendLayout();
@@ -171,6 +175,10 @@
             // pianoContainer.Panel1
             // 
             this.pianoContainer.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.pianoContainer.Panel1.Controls.Add(this.noteBass);
+            this.pianoContainer.Panel1.Controls.Add(this.noteOrgan);
+            this.pianoContainer.Panel1.Controls.Add(this.notePiano);
+            this.pianoContainer.Panel1.Controls.Add(this.textSounds);
             this.pianoContainer.Panel1.Controls.Add(this.keyAssist);
             this.pianoContainer.Panel1.Controls.Add(this.pianoImage);
             // 
@@ -1653,6 +1661,60 @@
             this.keyC1.UseVisualStyleBackColor = false;
             this.keyC1.Click += new System.EventHandler(this.keyC1_Click);
             // 
+            // textSounds
+            // 
+            this.textSounds.AutoSize = true;
+            this.textSounds.BackColor = System.Drawing.Color.Transparent;
+            this.textSounds.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSounds.ForeColor = System.Drawing.Color.Yellow;
+            this.textSounds.Image = global::VPPianoProject.Properties.Resources.small;
+            this.textSounds.Location = new System.Drawing.Point(928, 93);
+            this.textSounds.Name = "textSounds";
+            this.textSounds.Size = new System.Drawing.Size(133, 24);
+            this.textSounds.TabIndex = 2;
+            this.textSounds.Text = "Sound Banks";
+            // 
+            // notePiano
+            // 
+            this.notePiano.AutoSize = true;
+            this.notePiano.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("notePiano.BackgroundImage")));
+            this.notePiano.Checked = true;
+            this.notePiano.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notePiano.ForeColor = System.Drawing.Color.White;
+            this.notePiano.Location = new System.Drawing.Point(1102, 64);
+            this.notePiano.Name = "notePiano";
+            this.notePiano.Size = new System.Drawing.Size(72, 24);
+            this.notePiano.TabIndex = 3;
+            this.notePiano.TabStop = true;
+            this.notePiano.Text = "Piano";
+            this.notePiano.UseVisualStyleBackColor = true;
+            // 
+            // noteOrgan
+            // 
+            this.noteOrgan.AutoSize = true;
+            this.noteOrgan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("noteOrgan.BackgroundImage")));
+            this.noteOrgan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noteOrgan.ForeColor = System.Drawing.Color.White;
+            this.noteOrgan.Location = new System.Drawing.Point(1102, 94);
+            this.noteOrgan.Name = "noteOrgan";
+            this.noteOrgan.Size = new System.Drawing.Size(76, 24);
+            this.noteOrgan.TabIndex = 4;
+            this.noteOrgan.Text = "Organ";
+            this.noteOrgan.UseVisualStyleBackColor = true;
+            // 
+            // noteBass
+            // 
+            this.noteBass.AutoSize = true;
+            this.noteBass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("noteBass.BackgroundImage")));
+            this.noteBass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noteBass.ForeColor = System.Drawing.Color.White;
+            this.noteBass.Location = new System.Drawing.Point(1102, 124);
+            this.noteBass.Name = "noteBass";
+            this.noteBass.Size = new System.Drawing.Size(129, 24);
+            this.noteBass.TabIndex = 5;
+            this.noteBass.Text = "Double Bass";
+            this.noteBass.UseVisualStyleBackColor = true;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1813,7 +1875,11 @@
         private System.Windows.Forms.Label assistD5;
         private System.Windows.Forms.Label assistC5;
         private System.Windows.Forms.Label assistB4;
-        
+
         private System.Windows.Forms.Label assistB5;
+        private System.Windows.Forms.Label textSounds;
+        private System.Windows.Forms.RadioButton noteBass;
+        private System.Windows.Forms.RadioButton noteOrgan;
+        private System.Windows.Forms.RadioButton notePiano;
     }
 }

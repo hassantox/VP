@@ -337,6 +337,396 @@
   <ItemGroup>
     <None Include="Resources\small.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_A1_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_A1_1_mezzo-forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_A2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_A2_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_A3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_A3_05_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_As2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_As2_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_As3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_As3_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_B1_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_B1_15_mezzo-forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_B2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_B2_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_B3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_B3_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_bs4_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_bs4_15_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_bs5_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_bs5_15_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C1_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C1_1_mezzo-forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C2_05_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C3_1_mezzo-piano_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C4_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C4_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_C6_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Cs4_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Cs4_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D1_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D1_1_mezzo-forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D2_05_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D3_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D4_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_D4_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Ds4_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Ds4_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E1_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E1_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E2_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E3_15_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E4_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_E4_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F1_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F1_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F2_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F3_15_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F4_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_F4_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Fs4_05_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Fs4_05_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_G1_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_G1_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_G2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_G2_1_mezzo-forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_G3_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_G3_15_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Gs1_025_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Gs1_025_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Gs2_1_forte_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-bass_Gs2_1_fortissimo_arco-normal.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o22.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o24.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o26.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o27.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o28.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o30-12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o31.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o32.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o33.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o34.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o35.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o36.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o37.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o38.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o39.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o40.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o41.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o42.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o43.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o44.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o45.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o46.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o47.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o49.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o50.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
