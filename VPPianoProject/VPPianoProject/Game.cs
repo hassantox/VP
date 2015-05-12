@@ -158,359 +158,1170 @@ namespace VPPianoProject
 
         private void keyMD1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d_4);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D1_1_mezzo_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o4);
+                keySound.Play();
+            }
         }
 
         private void keyE1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.e5);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_E1_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o5);
+                keySound.Play();
+            }
         }
 
         private void keyF1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f6);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F1_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o6);
+                keySound.Play();
+            }
         }
 
         private void keyMF1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f_7);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F1_15_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o7);
+                keySound.Play();
+            }
         }
 
         private void keyG1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g8);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_G1_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o8);
+                keySound.Play();
+            }
         }
 
         private void keyMG1_Click(object sender, EventArgs e)
         {
+            if (notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g_9);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_G1_15_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o9);
+                keySound.Play();
+            }
         }
 
         private void keyA1_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a10);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_A1_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o10);
+                keySound.Play();
+            }
         }
 
         private void keyMA1_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a_11);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_A1_1_mezzo_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o11);
+                keySound.Play();
+            }
         }
 
         private void keyB1_Click(object sender, EventArgs e)
         {
-
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.b12);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_B1_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o12);
+                keySound.Play();
+            }
         }
 
         //              SECOND OCTAVE
         
         private void keyC2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c13);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o13);
+                keySound.Play();
+            }
         }
 
         private void keyMC2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c_14);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C2_05_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o14);
+                keySound.Play();
+            }
         }
 
         private void keyD2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d15);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o15);
+                keySound.Play();
+            }
         }
 
         private void keyMD2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d_16);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D2_05_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o16);
+                keySound.Play();
+            }
         }
 
         private void keyE2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.e17);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_E2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o17);
+                keySound.Play();
+            }
         }
 
         private void keyF2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f18);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o18);
+                keySound.Play();
+            }
         }
 
         private void keyMF2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f_19);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F2_15_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o19);
+                keySound.Play();
+            }
         }
 
         private void keyG2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g20);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_G2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o20);
+                keySound.Play();
+            }
         }
 
         private void keyMG2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g_21);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_G2_1_mezzo_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o21);
+                keySound.Play();
+            }
         }
 
         private void keyA2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a22);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_A2_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o22);
+                keySound.Play();
+            }
         }
 
         private void keyMA2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a_23);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_A2_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o23);
+                keySound.Play();
+            }
         }
 
         private void keyB2_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.b24);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_B2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o24);
+                keySound.Play();
+            }
         }
 
         //              THIRD OCTAVE
 
         private void keyC3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.C25Start);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C3_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o25);
+                keySound.Play();
+            }
         }
 
         private void keyMC3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c_26);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C3_1_mezzo_piano_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o26);
+                keySound.Play();
+            }
         }
 
         private void keyD3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.D27);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D3_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o27);
+                keySound.Play();
+            }
         }
 
         private void keyMD3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d_28);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D3_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o28);
+                keySound.Play();
+            }
         }
 
         private void keyE3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.E29);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_E3_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o29);
+                keySound.Play();
+            }
         }
 
         private void keyF3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.F30);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F3_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30);
+                keySound.Play();
+            }
         }
 
         private void keyMF3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f_31);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F3_15_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o31);
+                keySound.Play();
+            }
         }
 
         private void keyG3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.G32);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_G3_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o32);
+                keySound.Play();
+            }
         }
 
         private void keyMG3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g_33);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_G3_15_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o33);
+                keySound.Play();
+            }
         }
 
         private void keyA3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.A34);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_A3_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o34);
+                keySound.Play();
+            }
         }
 
         private void keyMA3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a_35);
             keySound.Play();
+}
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_A3_05_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o35);
+                keySound.Play();
+            }
         }
 
         private void keyB3_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.b36);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_B3_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o36);
+                keySound.Play();
+            }
         }
 
         //          FOURTH OCTAVE
 
         private void keyC4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c37);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C4_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_12);
+                keySound.Play();
+            }
         }
 
         private void keyMC4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c_38);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C4_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_11);
+                keySound.Play();
+            }
         }
 
         private void keyD4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d39);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D4_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_10);
+                keySound.Play();
+            }
         }
 
         private void keyMD4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d_40);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_D4_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_9);
+                keySound.Play();
+            }
         }
 
         private void keyE4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.e41);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_E4_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_8);
+                keySound.Play();
+            }
         }
 
         private void keyF4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f42);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F4_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_7);
+                keySound.Play();
+            }
         }
 
         private void keyMF4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f_43);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_F4_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_6);
+                keySound.Play();
+            }
         }
 
         private void keyG4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g44);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Gs1_025_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_5);
+                keySound.Play();
+            }
         }
 
         private void keyMG4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g_45);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Gs1_025_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_4);
+                keySound.Play();
+            }
         }
 
         private void keyA4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a46);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_As2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_3);
+                keySound.Play();
+            }
         }
 
         private void keyMA4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a_47);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_As2_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_2);
+                keySound.Play();
+            }
         }
 
         private void keyB4_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.b48Last);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_bs4_15_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o30_1);
+                keySound.Play();
+            }
         }
 
         //          FIFTH OCTAVE
 
         private void keyC5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c49);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Cs4_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o37);
+                keySound.Play();
+            }
         }
 
         private void keyMC5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c_50);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Cs4_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o38);
+                keySound.Play();
+            }
         }
 
         private void keyD5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d51);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Ds4_1_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o39);
+                keySound.Play();
+            }
         }
 
         private void keyMD5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.d_52);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Ds4_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o40);
+                keySound.Play();
+            }
         }
 
         private void keyE5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.e53);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Ds4_1_fortissimo_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o41);
+                keySound.Play();
+            }
         }
 
         private void keyF5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f54);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Fs4_05_forte_arco_normal);
+                keySound.Play();            
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o42);
+                keySound.Play();
+            }
         }
 
         private void keyMF5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.f_55);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Fs4_05_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o43);
+                keySound.Play();
+            }
         }
 
         private void keyG5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g56);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Gs2_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o44);
+                keySound.Play();
+            }
         }
 
         private void keyMG5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.g_57);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_Gs2_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o45);
+                keySound.Play();
+            }
         }
 
         private void keyA5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a58);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_As3_1_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o46);
+                keySound.Play();
+            }
         }
 
         private void keyMA5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.a_59);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_As3_1_fortissimo_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o49);
+                keySound.Play();
+            }
         }
 
         private void keyB5_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.b60);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_bs5_15_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o50);
+                keySound.Play();
+            }
         }
 
         private void keyC6Last_Click(object sender, EventArgs e)
         {
+            if(notePiano.Checked)
+            {
             SoundPlayer keySound = new SoundPlayer(Notes.c61);
             keySound.Play();
+            }
+            if (noteBass.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.double_bass_C6_15_forte_arco_normal);
+                keySound.Play();
+            }
+
+            if (noteOrgan.Checked)
+            {
+                SoundPlayer keySound = new SoundPlayer(Notes.o50);
+                keySound.Play();
+            }
         }
 
 //            +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
