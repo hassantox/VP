@@ -85,8 +85,9 @@ namespace VPPianoProject
             assistA5.Visible = false;
             assistMA5.Visible = false;
             assistB5.Visible = false;
-
             assistC6.Visible = false;
+
+            
             
         }
 
@@ -1816,6 +1817,41 @@ namespace VPPianoProject
                 assistC6.Visible = true;
             }
         }
+
+  //    +++++++++++++++++++++++++++++++++++PLAY NOTES++++++++++++++++++++
+
+        int index = 0;
+        string[] keys;
+        string keys1;
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            this.Select();
+            keys1 = textBoxNotes.Text;
+            keys = keys1.Split(new char[] { ' ', ';' }, StringSplitOptions.RemoveEmptyEntries);
+           // keys = textBoxNotes.Text.Split(new char[] { ' ', ';' }, StringSplitOptions.RemoveEmptyEntries);
+            timerPlayback.Start();
+        }
+
+        private void timerPlayback_Tick(object sender, EventArgs e)
+        {
+            if (index == keys.Length - 1)
+            {
+                index = 0;
+                timerPlayback.Stop();
+            }
+
+            string note = keys[index];
+            SendKeys.Send(note);
+            index++;
+
+        }
+
+        private void nUDInterval_ValueChanged(object sender, EventArgs e)
+        {
+            timerPlayback.Interval = (int)nUDInterval.Value;
+        }
+
 
       
 

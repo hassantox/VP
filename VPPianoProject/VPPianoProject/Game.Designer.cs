@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.pianoContainer = new System.Windows.Forms.SplitContainer();
+            this.nUDInterval = new System.Windows.Forms.NumericUpDown();
+            this.buttonPlay = new System.Windows.Forms.Button();
+            this.textBoxNotes = new System.Windows.Forms.TextBox();
             this.noteBass = new System.Windows.Forms.RadioButton();
             this.noteOrgan = new System.Windows.Forms.RadioButton();
             this.notePiano = new System.Windows.Forms.RadioButton();
@@ -158,10 +162,12 @@
             this.keyD1 = new System.Windows.Forms.Button();
             this.keyC3 = new System.Windows.Forms.Button();
             this.keyC1 = new System.Windows.Forms.Button();
+            this.timerPlayback = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).BeginInit();
             this.pianoContainer.Panel1.SuspendLayout();
             this.pianoContainer.Panel2.SuspendLayout();
             this.pianoContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nUDInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pianoImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,6 +181,9 @@
             // pianoContainer.Panel1
             // 
             this.pianoContainer.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.pianoContainer.Panel1.Controls.Add(this.nUDInterval);
+            this.pianoContainer.Panel1.Controls.Add(this.buttonPlay);
+            this.pianoContainer.Panel1.Controls.Add(this.textBoxNotes);
             this.pianoContainer.Panel1.Controls.Add(this.noteBass);
             this.pianoContainer.Panel1.Controls.Add(this.noteOrgan);
             this.pianoContainer.Panel1.Controls.Add(this.notePiano);
@@ -311,6 +320,56 @@
             this.pianoContainer.SplitterDistance = 158;
             this.pianoContainer.TabIndex = 1;
             // 
+            // nUDInterval
+            // 
+            this.nUDInterval.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.nUDInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nUDInterval.ForeColor = System.Drawing.Color.White;
+            this.nUDInterval.Increment = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.nUDInterval.Location = new System.Drawing.Point(344, 48);
+            this.nUDInterval.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nUDInterval.Name = "nUDInterval";
+            this.nUDInterval.Size = new System.Drawing.Size(66, 24);
+            this.nUDInterval.TabIndex = 8;
+            this.nUDInterval.Value = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.nUDInterval.ValueChanged += new System.EventHandler(this.nUDInterval_ValueChanged);
+            // 
+            // buttonPlay
+            // 
+            this.buttonPlay.BackgroundImage = global::VPPianoProject.Properties.Resources._28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500;
+            this.buttonPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPlay.ForeColor = System.Drawing.Color.White;
+            this.buttonPlay.Location = new System.Drawing.Point(811, 48);
+            this.buttonPlay.Name = "buttonPlay";
+            this.buttonPlay.Size = new System.Drawing.Size(88, 29);
+            this.buttonPlay.TabIndex = 7;
+            this.buttonPlay.Text = "Play";
+            this.buttonPlay.UseVisualStyleBackColor = true;
+            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
+            // 
+            // textBoxNotes
+            // 
+            this.textBoxNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNotes.Location = new System.Drawing.Point(325, 0);
+            this.textBoxNotes.Multiline = true;
+            this.textBoxNotes.Name = "textBoxNotes";
+            this.textBoxNotes.Size = new System.Drawing.Size(586, 42);
+            this.textBoxNotes.TabIndex = 6;
+            // 
             // noteBass
             // 
             this.noteBass.AutoSize = true;
@@ -373,7 +432,7 @@
             this.keyAssist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.keyAssist.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.keyAssist.ForeColor = System.Drawing.Color.Snow;
-            this.keyAssist.Location = new System.Drawing.Point(51, 88);
+            this.keyAssist.Location = new System.Drawing.Point(46, 85);
             this.keyAssist.Name = "keyAssist";
             this.keyAssist.Size = new System.Drawing.Size(142, 29);
             this.keyAssist.TabIndex = 1;
@@ -1715,6 +1774,10 @@
             this.keyC1.UseVisualStyleBackColor = false;
             this.keyC1.Click += new System.EventHandler(this.keyC1_Click);
             // 
+            // timerPlayback
+            // 
+            this.timerPlayback.Tick += new System.EventHandler(this.timerPlayback_Tick);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1740,6 +1803,7 @@
             this.pianoContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).EndInit();
             this.pianoContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nUDInterval)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pianoImage)).EndInit();
             this.ResumeLayout(false);
 
@@ -1881,5 +1945,9 @@
         private System.Windows.Forms.RadioButton noteBass;
         private System.Windows.Forms.RadioButton noteOrgan;
         private System.Windows.Forms.RadioButton notePiano;
+        private System.Windows.Forms.Button buttonPlay;
+        private System.Windows.Forms.TextBox textBoxNotes;
+        private System.Windows.Forms.Timer timerPlayback;
+        private System.Windows.Forms.NumericUpDown nUDInterval;
     }
 }

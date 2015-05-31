@@ -36,6 +36,7 @@
             // imageExit
             // 
             this.imageExit.BackColor = System.Drawing.Color.Black;
+            this.imageExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.imageExit.Image = global::VPPianoProject.Properties.Resources._1386985357;
             this.imageExit.Location = new System.Drawing.Point(570, 391);
             this.imageExit.Name = "imageExit";
@@ -74,7 +75,7 @@
             this.Name = "mainMenu";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Piano";
+            this.Text = "Game";
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imageExit)).EndInit();
             this.ResumeLayout(false);
