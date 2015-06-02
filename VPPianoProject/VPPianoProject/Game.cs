@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Media;
+using NAudio.Wave;
+using NAudio.Lame;
+
 
 namespace VPPianoProject
 {
@@ -98,6 +101,8 @@ namespace VPPianoProject
 
         private void keyC1_Click(object sender, EventArgs e)
         {
+            
+
             if (notePiano.Checked)
             {
             SoundPlayer keySound = new SoundPlayer(Notes.c1);           
@@ -1332,9 +1337,8 @@ namespace VPPianoProject
         private void Game_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.D1)
-            {
-                
-                keyC1.PerformClick();
+            {         
+              keyC1.PerformClick();
             }
 
             if (e.KeyChar == (char)Keys.D2)
@@ -1523,6 +1527,7 @@ namespace VPPianoProject
             if (e.Control && e.KeyCode == Keys.D1)
             {
                 keyC1M.PerformClick();
+                
             }
 
             if (e.Control && e.KeyCode == Keys.D2)
@@ -1818,40 +1823,50 @@ namespace VPPianoProject
             }
         }
 
-  //    +++++++++++++++++++++++++++++++++++PLAY NOTES++++++++++++++++++++
 
-        int index = 0;
-        string[] keys;
-        string keys1;
+  //    +++++++++++++++++++++++++++++++++++PLAY/RECORD NOTES++++++++++++++++++++
 
-        private void buttonPlay_Click(object sender, EventArgs e)
+        
+        LameMP3FileWriter writer;
+
+       // bool stopped = false;
+
+        IWaveIn waveIn = new WasapiLoopbackCapture();
+
+        private void btnRecord_Click(object sender, EventArgs e)
         {
-            this.Select();
-            keys1 = textBoxNotes.Text;
-            keys = keys1.Split(new char[] { ' ', ';' }, StringSplitOptions.RemoveEmptyEntries);
-           // keys = textBoxNotes.Text.Split(new char[] { ' ', ';' }, StringSplitOptions.RemoveEmptyEntries);
-            timerPlayback.Start();
-        }
+           
+            saveFileDialogMP3Save.Title = "Save To: ";
+            saveFileDialogMP3Save.InitialDirectory = @"C:\";
+            saveFileDialogMP3Save.Filter = "MP3 Files (*.mp3)|*.mp3";
 
-        private void timerPlayback_Tick(object sender, EventArgs e)
-        {
-            if (index == keys.Length - 1)
+            if (saveFileDialogMP3Save.ShowDialog() == DialogResult.OK)
             {
-                index = 0;
-                timerPlayback.Stop();
+               String file = saveFileDialogMP3Save.FileName;
+
+                waveIn.DataAvailable += waveIn_DataAvailable;
+                writer = new LameMP3FileWriter(file, waveIn.WaveFormat, 128);
+                waveIn.StartRecording();
             }
-
-            string note = keys[index];
-            SendKeys.Send(note);
-            index++;
-
+            
+            btnRecord.Enabled = false;
+           // stopped = false;
         }
 
-        private void nUDInterval_ValueChanged(object sender, EventArgs e)
+        public void waveIn_DataAvailable(object sender, WaveInEventArgs e)
         {
-            timerPlayback.Interval = (int)nUDInterval.Value;
+            if (writer != null)
+                writer.Write(e.Buffer, 0, e.BytesRecorded);
         }
 
+        private void btnStopRec_Click(object sender, EventArgs e)
+        {
+            waveIn.StopRecording();
+            writer.Flush();
+            btnRecord.Enabled = true;
+           // waveIn.Dispose();
+           // writer.Dispose();
+        }
 
       
 

@@ -9,3 +9,8 @@ C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.Notes.resources
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\Interop.WMPLib.dll
 C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\obj\x86\Debug\VPPianoProject.csproj.ResolveComReference.cache
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\libmp3lame.32.dll
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\libmp3lame.64.dll
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\NAudio.dll
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\NAudio.Lame.dll
+C:\Users\Hassan\Documents\GitHub\VP\VPPianoProject\VPPianoProject\bin\Debug\NAudio.xml

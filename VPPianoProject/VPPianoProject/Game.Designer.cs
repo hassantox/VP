@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.pianoContainer = new System.Windows.Forms.SplitContainer();
-            this.nUDInterval = new System.Windows.Forms.NumericUpDown();
-            this.buttonPlay = new System.Windows.Forms.Button();
-            this.textBoxNotes = new System.Windows.Forms.TextBox();
+            this.btnStopRec = new System.Windows.Forms.Button();
+            this.btnRecord = new System.Windows.Forms.Button();
             this.noteBass = new System.Windows.Forms.RadioButton();
             this.noteOrgan = new System.Windows.Forms.RadioButton();
             this.notePiano = new System.Windows.Forms.RadioButton();
@@ -162,12 +160,12 @@
             this.keyD1 = new System.Windows.Forms.Button();
             this.keyC3 = new System.Windows.Forms.Button();
             this.keyC1 = new System.Windows.Forms.Button();
-            this.timerPlayback = new System.Windows.Forms.Timer(this.components);
+            this.labelRECORD = new System.Windows.Forms.Label();
+            this.saveFileDialogMP3Save = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).BeginInit();
             this.pianoContainer.Panel1.SuspendLayout();
             this.pianoContainer.Panel2.SuspendLayout();
             this.pianoContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUDInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pianoImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,9 +179,9 @@
             // pianoContainer.Panel1
             // 
             this.pianoContainer.Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.pianoContainer.Panel1.Controls.Add(this.nUDInterval);
-            this.pianoContainer.Panel1.Controls.Add(this.buttonPlay);
-            this.pianoContainer.Panel1.Controls.Add(this.textBoxNotes);
+            this.pianoContainer.Panel1.Controls.Add(this.labelRECORD);
+            this.pianoContainer.Panel1.Controls.Add(this.btnStopRec);
+            this.pianoContainer.Panel1.Controls.Add(this.btnRecord);
             this.pianoContainer.Panel1.Controls.Add(this.noteBass);
             this.pianoContainer.Panel1.Controls.Add(this.noteOrgan);
             this.pianoContainer.Panel1.Controls.Add(this.notePiano);
@@ -320,55 +318,32 @@
             this.pianoContainer.SplitterDistance = 158;
             this.pianoContainer.TabIndex = 1;
             // 
-            // nUDInterval
+            // btnStopRec
             // 
-            this.nUDInterval.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.nUDInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nUDInterval.ForeColor = System.Drawing.Color.White;
-            this.nUDInterval.Increment = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.nUDInterval.Location = new System.Drawing.Point(344, 48);
-            this.nUDInterval.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.nUDInterval.Name = "nUDInterval";
-            this.nUDInterval.Size = new System.Drawing.Size(66, 24);
-            this.nUDInterval.TabIndex = 8;
-            this.nUDInterval.Value = new decimal(new int[] {
-            200,
-            0,
-            0,
-            0});
-            this.nUDInterval.ValueChanged += new System.EventHandler(this.nUDInterval_ValueChanged);
+            this.btnStopRec.BackgroundImage = global::VPPianoProject.Properties.Resources.small;
+            this.btnStopRec.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStopRec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStopRec.ForeColor = System.Drawing.Color.Red;
+            this.btnStopRec.Location = new System.Drawing.Point(658, 43);
+            this.btnStopRec.Name = "btnStopRec";
+            this.btnStopRec.Size = new System.Drawing.Size(76, 33);
+            this.btnStopRec.TabIndex = 7;
+            this.btnStopRec.Text = "Stop";
+            this.btnStopRec.UseVisualStyleBackColor = true;
+            this.btnStopRec.Click += new System.EventHandler(this.btnStopRec_Click);
             // 
-            // buttonPlay
+            // btnRecord
             // 
-            this.buttonPlay.BackgroundImage = global::VPPianoProject.Properties.Resources._28FC9B29B84846FAB3127A4E46A95B48_12073_d0d66fe5085f4bda772bafe49a07f500;
-            this.buttonPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonPlay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlay.ForeColor = System.Drawing.Color.White;
-            this.buttonPlay.Location = new System.Drawing.Point(811, 48);
-            this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(88, 29);
-            this.buttonPlay.TabIndex = 7;
-            this.buttonPlay.Text = "Play";
-            this.buttonPlay.UseVisualStyleBackColor = true;
-            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
-            // 
-            // textBoxNotes
-            // 
-            this.textBoxNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNotes.Location = new System.Drawing.Point(325, 0);
-            this.textBoxNotes.Multiline = true;
-            this.textBoxNotes.Name = "textBoxNotes";
-            this.textBoxNotes.Size = new System.Drawing.Size(586, 42);
-            this.textBoxNotes.TabIndex = 6;
+            this.btnRecord.BackgroundImage = global::VPPianoProject.Properties.Resources.small;
+            this.btnRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecord.ForeColor = System.Drawing.Color.Aqua;
+            this.btnRecord.Location = new System.Drawing.Point(498, 43);
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.Size = new System.Drawing.Size(75, 33);
+            this.btnRecord.TabIndex = 6;
+            this.btnRecord.Text = "Record";
+            this.btnRecord.UseVisualStyleBackColor = true;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // noteBass
             // 
@@ -1101,7 +1076,10 @@
             // keyMA5
             // 
             this.keyMA5.BackColor = System.Drawing.Color.Black;
-            this.keyMA5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMA5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMA5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMA5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMA5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMA5.Location = new System.Drawing.Point(1204, 3);
             this.keyMA5.Name = "keyMA5";
             this.keyMA5.Size = new System.Drawing.Size(28, 144);
@@ -1112,7 +1090,10 @@
             // keyMA4
             // 
             this.keyMA4.BackColor = System.Drawing.Color.Black;
-            this.keyMA4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMA4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMA4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMA4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMA4.Location = new System.Drawing.Point(956, 3);
             this.keyMA4.Name = "keyMA4";
             this.keyMA4.Size = new System.Drawing.Size(28, 144);
@@ -1123,7 +1104,10 @@
             // keyMA2
             // 
             this.keyMA2.BackColor = System.Drawing.Color.Black;
-            this.keyMA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMA2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMA2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMA2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMA2.Location = new System.Drawing.Point(453, 3);
             this.keyMA2.Name = "keyMA2";
             this.keyMA2.Size = new System.Drawing.Size(28, 144);
@@ -1134,7 +1118,10 @@
             // keyMD5
             // 
             this.keyMD5.BackColor = System.Drawing.Color.Black;
-            this.keyMD5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMD5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMD5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMD5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMD5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMD5.Location = new System.Drawing.Point(1061, 3);
             this.keyMD5.Name = "keyMD5";
             this.keyMD5.Size = new System.Drawing.Size(28, 144);
@@ -1146,7 +1133,10 @@
             // keyMD4
             // 
             this.keyMD4.BackColor = System.Drawing.Color.Black;
-            this.keyMD4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMD4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMD4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMD4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMD4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMD4.Location = new System.Drawing.Point(811, 3);
             this.keyMD4.Name = "keyMD4";
             this.keyMD4.Size = new System.Drawing.Size(28, 144);
@@ -1158,7 +1148,10 @@
             // keyMD2
             // 
             this.keyMD2.BackColor = System.Drawing.Color.Black;
-            this.keyMD2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMD2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMD2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMD2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMD2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMD2.Location = new System.Drawing.Point(308, 3);
             this.keyMD2.Name = "keyMD2";
             this.keyMD2.Size = new System.Drawing.Size(28, 144);
@@ -1170,7 +1163,10 @@
             // keyMG5
             // 
             this.keyMG5.BackColor = System.Drawing.Color.Black;
-            this.keyMG5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMG5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMG5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMG5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMG5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMG5.Location = new System.Drawing.Point(1167, 3);
             this.keyMG5.Name = "keyMG5";
             this.keyMG5.Size = new System.Drawing.Size(28, 144);
@@ -1181,7 +1177,10 @@
             // keyMG4
             // 
             this.keyMG4.BackColor = System.Drawing.Color.Black;
-            this.keyMG4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMG4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMG4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMG4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMG4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMG4.Location = new System.Drawing.Point(920, 3);
             this.keyMG4.Name = "keyMG4";
             this.keyMG4.Size = new System.Drawing.Size(28, 144);
@@ -1192,7 +1191,10 @@
             // keyMG2
             // 
             this.keyMG2.BackColor = System.Drawing.Color.Black;
-            this.keyMG2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMG2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMG2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMG2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMG2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMG2.Location = new System.Drawing.Point(417, 3);
             this.keyMG2.Name = "keyMG2";
             this.keyMG2.Size = new System.Drawing.Size(28, 144);
@@ -1203,7 +1205,10 @@
             // keyMF5
             // 
             this.keyMF5.BackColor = System.Drawing.Color.Black;
-            this.keyMF5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMF5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMF5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMF5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMF5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMF5.Location = new System.Drawing.Point(1133, 3);
             this.keyMF5.Name = "keyMF5";
             this.keyMF5.Size = new System.Drawing.Size(28, 144);
@@ -1214,7 +1219,10 @@
             // keyMF4
             // 
             this.keyMF4.BackColor = System.Drawing.Color.Black;
-            this.keyMF4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMF4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMF4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMF4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMF4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMF4.Location = new System.Drawing.Point(883, 3);
             this.keyMF4.Name = "keyMF4";
             this.keyMF4.Size = new System.Drawing.Size(28, 144);
@@ -1225,7 +1233,10 @@
             // keyMF2
             // 
             this.keyMF2.BackColor = System.Drawing.Color.Black;
-            this.keyMF2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMF2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMF2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMF2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMF2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMF2.Location = new System.Drawing.Point(382, 3);
             this.keyMF2.Name = "keyMF2";
             this.keyMF2.Size = new System.Drawing.Size(28, 144);
@@ -1236,7 +1247,10 @@
             // keyMC5
             // 
             this.keyMC5.BackColor = System.Drawing.Color.Black;
-            this.keyMC5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMC5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMC5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMC5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMC5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMC5.Location = new System.Drawing.Point(1025, 3);
             this.keyMC5.Name = "keyMC5";
             this.keyMC5.Size = new System.Drawing.Size(28, 144);
@@ -1247,7 +1261,10 @@
             // keyMC4
             // 
             this.keyMC4.BackColor = System.Drawing.Color.Black;
-            this.keyMC4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMC4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMC4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMC4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMC4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMC4.Location = new System.Drawing.Point(775, 3);
             this.keyMC4.Name = "keyMC4";
             this.keyMC4.Size = new System.Drawing.Size(28, 144);
@@ -1258,7 +1275,10 @@
             // keyMC2
             // 
             this.keyMC2.BackColor = System.Drawing.Color.Black;
-            this.keyMC2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMC2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMC2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMC2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMC2.Location = new System.Drawing.Point(273, 3);
             this.keyMC2.Name = "keyMC2";
             this.keyMC2.Size = new System.Drawing.Size(28, 144);
@@ -1269,7 +1289,10 @@
             // keyD5
             // 
             this.keyD5.BackColor = System.Drawing.Color.White;
-            this.keyD5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyD5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyD5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyD5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyD5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyD5.Location = new System.Drawing.Point(1042, 3);
             this.keyD5.Name = "keyD5";
             this.keyD5.Size = new System.Drawing.Size(33, 207);
@@ -1280,7 +1303,10 @@
             // keyD4
             // 
             this.keyD4.BackColor = System.Drawing.Color.White;
-            this.keyD4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyD4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyD4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyD4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyD4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyD4.Location = new System.Drawing.Point(792, 3);
             this.keyD4.Name = "keyD4";
             this.keyD4.Size = new System.Drawing.Size(33, 207);
@@ -1291,7 +1317,10 @@
             // keyD2
             // 
             this.keyD2.BackColor = System.Drawing.Color.White;
-            this.keyD2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyD2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyD2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyD2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyD2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyD2.Location = new System.Drawing.Point(288, 3);
             this.keyD2.Name = "keyD2";
             this.keyD2.Size = new System.Drawing.Size(33, 207);
@@ -1302,7 +1331,10 @@
             // keyC6Last
             // 
             this.keyC6Last.BackColor = System.Drawing.Color.White;
-            this.keyC6Last.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC6Last.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyC6Last.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC6Last.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyC6Last.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC6Last.Location = new System.Drawing.Point(1255, 3);
             this.keyC6Last.Name = "keyC6Last";
             this.keyC6Last.Size = new System.Drawing.Size(33, 207);
@@ -1313,7 +1345,10 @@
             // keyB5
             // 
             this.keyB5.BackColor = System.Drawing.Color.White;
-            this.keyB5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyB5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyB5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyB5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyB5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyB5.Location = new System.Drawing.Point(1220, 3);
             this.keyB5.Name = "keyB5";
             this.keyB5.Size = new System.Drawing.Size(33, 207);
@@ -1324,7 +1359,10 @@
             // keyB4
             // 
             this.keyB4.BackColor = System.Drawing.Color.White;
-            this.keyB4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyB4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyB4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyB4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyB4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyB4.Location = new System.Drawing.Point(972, 3);
             this.keyB4.Name = "keyB4";
             this.keyB4.Size = new System.Drawing.Size(33, 207);
@@ -1335,7 +1373,10 @@
             // keyF5
             // 
             this.keyF5.BackColor = System.Drawing.Color.White;
-            this.keyF5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyF5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyF5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyF5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyF5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyF5.Location = new System.Drawing.Point(1112, 3);
             this.keyF5.Name = "keyF5";
             this.keyF5.Size = new System.Drawing.Size(33, 207);
@@ -1346,7 +1387,10 @@
             // keyB2
             // 
             this.keyB2.BackColor = System.Drawing.Color.White;
-            this.keyB2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyB2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyB2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyB2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyB2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyB2.Location = new System.Drawing.Point(468, 3);
             this.keyB2.Name = "keyB2";
             this.keyB2.Size = new System.Drawing.Size(33, 207);
@@ -1357,7 +1401,10 @@
             // keyF4
             // 
             this.keyF4.BackColor = System.Drawing.Color.White;
-            this.keyF4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyF4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyF4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyF4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyF4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyF4.Location = new System.Drawing.Point(864, 3);
             this.keyF4.Name = "keyF4";
             this.keyF4.Size = new System.Drawing.Size(33, 207);
@@ -1368,7 +1415,10 @@
             // keyG5
             // 
             this.keyG5.BackColor = System.Drawing.Color.White;
-            this.keyG5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyG5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyG5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyG5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyG5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyG5.Location = new System.Drawing.Point(1148, 3);
             this.keyG5.Name = "keyG5";
             this.keyG5.Size = new System.Drawing.Size(33, 207);
@@ -1379,7 +1429,10 @@
             // keyF2
             // 
             this.keyF2.BackColor = System.Drawing.Color.White;
-            this.keyF2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyF2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyF2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyF2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyF2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyF2.Location = new System.Drawing.Point(360, 3);
             this.keyF2.Name = "keyF2";
             this.keyF2.Size = new System.Drawing.Size(33, 207);
@@ -1390,7 +1443,10 @@
             // keyG4
             // 
             this.keyG4.BackColor = System.Drawing.Color.White;
-            this.keyG4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyG4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyG4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyG4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyG4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyG4.Location = new System.Drawing.Point(900, 3);
             this.keyG4.Name = "keyG4";
             this.keyG4.Size = new System.Drawing.Size(33, 207);
@@ -1401,7 +1457,10 @@
             // keyA5
             // 
             this.keyA5.BackColor = System.Drawing.Color.White;
-            this.keyA5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyA5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyA5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyA5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyA5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyA5.Location = new System.Drawing.Point(1184, 3);
             this.keyA5.Name = "keyA5";
             this.keyA5.Size = new System.Drawing.Size(33, 207);
@@ -1412,7 +1471,10 @@
             // keyG2
             // 
             this.keyG2.BackColor = System.Drawing.Color.White;
-            this.keyG2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyG2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyG2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyG2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyG2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyG2.Location = new System.Drawing.Point(396, 3);
             this.keyG2.Name = "keyG2";
             this.keyG2.Size = new System.Drawing.Size(33, 207);
@@ -1423,7 +1485,10 @@
             // keyA4
             // 
             this.keyA4.BackColor = System.Drawing.Color.White;
-            this.keyA4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyA4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyA4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyA4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyA4.Location = new System.Drawing.Point(936, 3);
             this.keyA4.Name = "keyA4";
             this.keyA4.Size = new System.Drawing.Size(33, 207);
@@ -1434,7 +1499,10 @@
             // keyE5
             // 
             this.keyE5.BackColor = System.Drawing.Color.White;
-            this.keyE5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyE5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyE5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyE5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyE5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyE5.Location = new System.Drawing.Point(1077, 3);
             this.keyE5.Name = "keyE5";
             this.keyE5.Size = new System.Drawing.Size(33, 207);
@@ -1445,7 +1513,10 @@
             // keyA2
             // 
             this.keyA2.BackColor = System.Drawing.Color.White;
-            this.keyA2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyA2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyA2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyA2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyA2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyA2.Location = new System.Drawing.Point(432, 3);
             this.keyA2.Name = "keyA2";
             this.keyA2.Size = new System.Drawing.Size(33, 207);
@@ -1456,7 +1527,10 @@
             // keyE4
             // 
             this.keyE4.BackColor = System.Drawing.Color.White;
-            this.keyE4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyE4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyE4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyE4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyE4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyE4.Location = new System.Drawing.Point(828, 3);
             this.keyE4.Name = "keyE4";
             this.keyE4.Size = new System.Drawing.Size(33, 207);
@@ -1467,7 +1541,10 @@
             // keyC5
             // 
             this.keyC5.BackColor = System.Drawing.Color.White;
-            this.keyC5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyC5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyC5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC5.Location = new System.Drawing.Point(1007, 3);
             this.keyC5.Name = "keyC5";
             this.keyC5.Size = new System.Drawing.Size(33, 207);
@@ -1478,7 +1555,10 @@
             // keyE2
             // 
             this.keyE2.BackColor = System.Drawing.Color.White;
-            this.keyE2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyE2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyE2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyE2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyE2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyE2.Location = new System.Drawing.Point(324, 3);
             this.keyE2.Name = "keyE2";
             this.keyE2.Size = new System.Drawing.Size(33, 207);
@@ -1489,7 +1569,10 @@
             // keyC4
             // 
             this.keyC4.BackColor = System.Drawing.Color.White;
-            this.keyC4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyC4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyC4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC4.Location = new System.Drawing.Point(756, 3);
             this.keyC4.Name = "keyC4";
             this.keyC4.Size = new System.Drawing.Size(33, 207);
@@ -1500,7 +1583,10 @@
             // keyC2
             // 
             this.keyC2.BackColor = System.Drawing.Color.White;
-            this.keyC2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyC2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC2.Location = new System.Drawing.Point(252, 3);
             this.keyC2.Name = "keyC2";
             this.keyC2.Size = new System.Drawing.Size(33, 207);
@@ -1511,7 +1597,10 @@
             // keyMG3
             // 
             this.keyMG3.BackColor = System.Drawing.Color.Black;
-            this.keyMG3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMG3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMG3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMG3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMG3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMG3.Location = new System.Drawing.Point(668, 3);
             this.keyMG3.Name = "keyMG3";
             this.keyMG3.Size = new System.Drawing.Size(28, 144);
@@ -1522,7 +1611,10 @@
             // keyMG1
             // 
             this.keyMG1.BackColor = System.Drawing.Color.Black;
-            this.keyMG1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMG1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMG1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMG1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMG1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMG1.Location = new System.Drawing.Point(165, 3);
             this.keyMG1.Name = "keyMG1";
             this.keyMG1.Size = new System.Drawing.Size(28, 144);
@@ -1533,7 +1625,10 @@
             // keyMA3
             // 
             this.keyMA3.BackColor = System.Drawing.Color.Black;
-            this.keyMA3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMA3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMA3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMA3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMA3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMA3.Location = new System.Drawing.Point(702, 3);
             this.keyMA3.Name = "keyMA3";
             this.keyMA3.Size = new System.Drawing.Size(28, 144);
@@ -1544,7 +1639,10 @@
             // keyMA1
             // 
             this.keyMA1.BackColor = System.Drawing.Color.Black;
-            this.keyMA1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMA1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMA1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMA1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMA1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMA1.Location = new System.Drawing.Point(199, 3);
             this.keyMA1.Name = "keyMA1";
             this.keyMA1.Size = new System.Drawing.Size(28, 144);
@@ -1555,7 +1653,10 @@
             // keyMF3
             // 
             this.keyMF3.BackColor = System.Drawing.Color.Black;
-            this.keyMF3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMF3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMF3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMF3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMF3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMF3.Location = new System.Drawing.Point(632, 3);
             this.keyMF3.Name = "keyMF3";
             this.keyMF3.Size = new System.Drawing.Size(28, 144);
@@ -1566,7 +1667,10 @@
             // keyMF1
             // 
             this.keyMF1.BackColor = System.Drawing.Color.Black;
-            this.keyMF1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMF1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMF1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMF1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMF1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMF1.Location = new System.Drawing.Point(130, 3);
             this.keyMF1.Name = "keyMF1";
             this.keyMF1.Size = new System.Drawing.Size(28, 144);
@@ -1577,7 +1681,10 @@
             // keyB3
             // 
             this.keyB3.BackColor = System.Drawing.Color.White;
-            this.keyB3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyB3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyB3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyB3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyB3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyB3.Location = new System.Drawing.Point(720, 3);
             this.keyB3.Name = "keyB3";
             this.keyB3.Size = new System.Drawing.Size(33, 207);
@@ -1588,7 +1695,10 @@
             // keyB1
             // 
             this.keyB1.BackColor = System.Drawing.Color.White;
-            this.keyB1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyB1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyB1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyB1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyB1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyB1.Location = new System.Drawing.Point(216, 3);
             this.keyB1.Name = "keyB1";
             this.keyB1.Size = new System.Drawing.Size(33, 207);
@@ -1599,7 +1709,10 @@
             // keyA3
             // 
             this.keyA3.BackColor = System.Drawing.Color.White;
-            this.keyA3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyA3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyA3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyA3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyA3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyA3.Location = new System.Drawing.Point(684, 3);
             this.keyA3.Name = "keyA3";
             this.keyA3.Size = new System.Drawing.Size(33, 207);
@@ -1610,7 +1723,10 @@
             // keyA1
             // 
             this.keyA1.BackColor = System.Drawing.Color.White;
-            this.keyA1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyA1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyA1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyA1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyA1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyA1.Location = new System.Drawing.Point(180, 3);
             this.keyA1.Name = "keyA1";
             this.keyA1.Size = new System.Drawing.Size(33, 207);
@@ -1621,7 +1737,10 @@
             // keyG3
             // 
             this.keyG3.BackColor = System.Drawing.Color.White;
-            this.keyG3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyG3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyG3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyG3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyG3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyG3.Location = new System.Drawing.Point(648, 3);
             this.keyG3.Name = "keyG3";
             this.keyG3.Size = new System.Drawing.Size(33, 207);
@@ -1632,7 +1751,10 @@
             // keyG1
             // 
             this.keyG1.BackColor = System.Drawing.Color.White;
-            this.keyG1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyG1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyG1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyG1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyG1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyG1.Location = new System.Drawing.Point(144, 3);
             this.keyG1.Name = "keyG1";
             this.keyG1.Size = new System.Drawing.Size(33, 207);
@@ -1643,7 +1765,10 @@
             // keyF3
             // 
             this.keyF3.BackColor = System.Drawing.Color.White;
-            this.keyF3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyF3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyF3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyF3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyF3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyF3.Location = new System.Drawing.Point(612, 3);
             this.keyF3.Name = "keyF3";
             this.keyF3.Size = new System.Drawing.Size(33, 207);
@@ -1654,7 +1779,10 @@
             // keyF1
             // 
             this.keyF1.BackColor = System.Drawing.Color.White;
-            this.keyF1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyF1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyF1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyF1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyF1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyF1.Location = new System.Drawing.Point(108, 3);
             this.keyF1.Name = "keyF1";
             this.keyF1.Size = new System.Drawing.Size(33, 207);
@@ -1665,7 +1793,10 @@
             // keyMD3
             // 
             this.keyMD3.BackColor = System.Drawing.Color.Black;
-            this.keyMD3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMD3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMD3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMD3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMD3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMD3.Location = new System.Drawing.Point(558, 3);
             this.keyMD3.Name = "keyMD3";
             this.keyMD3.Size = new System.Drawing.Size(28, 144);
@@ -1676,7 +1807,10 @@
             // keyMD1
             // 
             this.keyMD1.BackColor = System.Drawing.Color.Black;
-            this.keyMD1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMD1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMD1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMD1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMD1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMD1.Location = new System.Drawing.Point(58, 3);
             this.keyMD1.Name = "keyMD1";
             this.keyMD1.Size = new System.Drawing.Size(28, 144);
@@ -1687,7 +1821,10 @@
             // keyE3
             // 
             this.keyE3.BackColor = System.Drawing.Color.White;
-            this.keyE3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyE3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyE3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyE3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyE3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyE3.Location = new System.Drawing.Point(576, 3);
             this.keyE3.Name = "keyE3";
             this.keyE3.Size = new System.Drawing.Size(33, 207);
@@ -1698,7 +1835,10 @@
             // keyE1
             // 
             this.keyE1.BackColor = System.Drawing.Color.White;
-            this.keyE1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyE1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyE1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyE1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyE1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyE1.Location = new System.Drawing.Point(72, 3);
             this.keyE1.Name = "keyE1";
             this.keyE1.Size = new System.Drawing.Size(33, 207);
@@ -1709,7 +1849,10 @@
             // keyMC3
             // 
             this.keyMC3.BackColor = System.Drawing.Color.Black;
-            this.keyMC3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyMC3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyMC3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyMC3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyMC3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyMC3.Location = new System.Drawing.Point(522, 3);
             this.keyMC3.Name = "keyMC3";
             this.keyMC3.Size = new System.Drawing.Size(28, 144);
@@ -1720,7 +1863,10 @@
             // keyC1M
             // 
             this.keyC1M.BackColor = System.Drawing.Color.Black;
-            this.keyC1M.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC1M.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.keyC1M.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC1M.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.keyC1M.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC1M.Location = new System.Drawing.Point(19, 3);
             this.keyC1M.Name = "keyC1M";
             this.keyC1M.Size = new System.Drawing.Size(28, 144);
@@ -1731,7 +1877,10 @@
             // keyD3
             // 
             this.keyD3.BackColor = System.Drawing.Color.White;
-            this.keyD3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyD3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyD3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyD3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyD3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyD3.Location = new System.Drawing.Point(540, 3);
             this.keyD3.Name = "keyD3";
             this.keyD3.Size = new System.Drawing.Size(33, 207);
@@ -1742,7 +1891,10 @@
             // keyD1
             // 
             this.keyD1.BackColor = System.Drawing.Color.White;
-            this.keyD1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyD1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyD1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyD1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyD1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyD1.Location = new System.Drawing.Point(36, 3);
             this.keyD1.Name = "keyD1";
             this.keyD1.Size = new System.Drawing.Size(33, 207);
@@ -1754,7 +1906,10 @@
             // 
             this.keyC3.BackColor = System.Drawing.Color.White;
             this.keyC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.keyC3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyC3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyC3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC3.Location = new System.Drawing.Point(504, 3);
             this.keyC3.Name = "keyC3";
             this.keyC3.Size = new System.Drawing.Size(33, 207);
@@ -1766,7 +1921,10 @@
             // 
             this.keyC1.BackColor = System.Drawing.Color.White;
             this.keyC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.keyC1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.keyC1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.keyC1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.keyC1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.keyC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.keyC1.Location = new System.Drawing.Point(0, 3);
             this.keyC1.Name = "keyC1";
             this.keyC1.Size = new System.Drawing.Size(33, 207);
@@ -1774,9 +1932,17 @@
             this.keyC1.UseVisualStyleBackColor = false;
             this.keyC1.Click += new System.EventHandler(this.keyC1_Click);
             // 
-            // timerPlayback
+            // labelRECORD
             // 
-            this.timerPlayback.Tick += new System.EventHandler(this.timerPlayback_Tick);
+            this.labelRECORD.AutoSize = true;
+            this.labelRECORD.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRECORD.ForeColor = System.Drawing.Color.White;
+            this.labelRECORD.Image = global::VPPianoProject.Properties.Resources.small;
+            this.labelRECORD.Location = new System.Drawing.Point(563, 7);
+            this.labelRECORD.Name = "labelRECORD";
+            this.labelRECORD.Size = new System.Drawing.Size(115, 23);
+            this.labelRECORD.TabIndex = 8;
+            this.labelRECORD.Text = "RECORDING";
             // 
             // Game
             // 
@@ -1803,7 +1969,6 @@
             this.pianoContainer.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pianoContainer)).EndInit();
             this.pianoContainer.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nUDInterval)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pianoImage)).EndInit();
             this.ResumeLayout(false);
 
@@ -1945,9 +2110,9 @@
         private System.Windows.Forms.RadioButton noteBass;
         private System.Windows.Forms.RadioButton noteOrgan;
         private System.Windows.Forms.RadioButton notePiano;
-        private System.Windows.Forms.Button buttonPlay;
-        private System.Windows.Forms.TextBox textBoxNotes;
-        private System.Windows.Forms.Timer timerPlayback;
-        private System.Windows.Forms.NumericUpDown nUDInterval;
+        private System.Windows.Forms.Button btnStopRec;
+        private System.Windows.Forms.Button btnRecord;
+        private System.Windows.Forms.Label labelRECORD;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogMP3Save;
     }
 }
